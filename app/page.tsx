@@ -1,7 +1,10 @@
+import { Button } from "@/components/ui/button";
+import HeroSection from "./components/hero-section";
+
 export default function Home() {
   return (
     <div>
-      <span className="text-dark-blue-700"> Awetu Oficial Website</span>
+      <HeroSection />
     </div>
   );
 }
