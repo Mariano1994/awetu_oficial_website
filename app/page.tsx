@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div>
-      <span className="text-secondary"> Awetu Oficial Website</span>
+      <span className="text-dark-blue-700"> Awetu Oficial Website</span>
     </div>
   );
 }
