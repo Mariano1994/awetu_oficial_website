@@ -11,7 +11,7 @@ export default {
     extend: {
       colors: {
         "dark-blue-700": "#133676",
-        "ligh-blue-200": "#158eff",
+        "light-blue-200": "#158eff",
         "light-yellow-100": "#ffcc5e",
         "light-green-100": "#05cd99",
         background: "hsl(var(--background))",

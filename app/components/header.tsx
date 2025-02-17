@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "../assets/awetu-logo.png";
+import logo from "../assets/awetu-logo.svg";
 import { Button } from "@/components/ui/button";
 import NaviMenu from "./navi-menu";
 import NavigationMenuDemo from "./navi-menu";
