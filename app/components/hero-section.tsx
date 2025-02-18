@@ -44,6 +44,7 @@ const HeroSection = () => {
             <h1 className="text-6xl font-semibold text-white ">
               Construindo o Futuro
             </h1>
+
             <span className="text-white ">
               Com a solução que precisa para assegurar o seu negocio{" "}
             </span>
@@ -70,6 +71,7 @@ const HeroSection = () => {
         </div>
       </div>
 
+      {/* Illustration Image */}
       <div className=" mx-auto max-w-[1220px] flex justify-center items-center -mt-12 2xl:-mt-44">
         <Image
           src={dashboardIllustratioin}
