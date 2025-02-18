@@ -16,19 +16,19 @@ import {
 
 const components: { title: string; href: string; description: string }[] = [
   {
-    title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
+    title: "Awetu Satisfy",
+    href: "#",
     description:
       "A modal dialog that interrupts the user with important content and expects a response.",
   },
   {
-    title: "Hover Card",
-    href: "/docs/primitives/hover-card",
+    title: "BuyExpress",
+    href: "#",
     description:
       "For sighted users to preview content available behind a link.",
   },
   {
-    title: "Progress",
+    title: "StudySmart",
     href: "/docs/primitives/progress",
     description:
       "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",

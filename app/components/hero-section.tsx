@@ -46,7 +46,7 @@ const HeroSection = () => {
             </h1>
 
             <span className="text-white ">
-              Com a solução que precisa para assegurar o seu negocio{" "}
+              Com a solução que precisa para assegurar o seu negócio{" "}
             </span>
 
             <div className="flex items-center gap-3 mt-3">

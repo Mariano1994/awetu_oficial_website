@@ -1,10 +1,11 @@
-import { Button } from "@/components/ui/button";
 import HeroSection from "./components/hero-section";
+import PartnerSection from "./components/partner-section";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <HeroSection />
-    </div>
+      <PartnerSection />
+    </>
   );
 }
