@@ -5,19 +5,19 @@ import realLotusPartner from "../assets/partners/real-lotus.svg";
 const partnes = [
   {
     image: awetuPartner,
-    brandName: "Awetu Technologies",
+    brandName: "Awetu Technologies1",
   },
   {
     image: realLotusPartner,
-    brandName: "Awetu Technologies",
+    brandName: "Awetu Technologies2",
   },
   {
     image: awetuPartner,
-    brandName: "Awetu Technologies",
+    brandName: "Awetu Technologies3",
   },
   {
     image: realLotusPartner,
-    brandName: "Awetu Technologies",
+    brandName: "Awetu Technologies4",
   },
 ];
 

@@ -1,3 +1,4 @@
+"use client";
 import { Grip, Layers, PieChart, TrendingUp } from "lucide-react";
 import Image from "next/image";
 import circle from "../assets/circle.svg";
@@ -13,7 +14,7 @@ const Services = () => {
         <Image
           src={dataLine}
           alt="line to incate data"
-          className="absolute top-16 left-72 animate-scroll"
+          className="absolute top-16 left-72"
         />
         <Image
           src={processLine}
