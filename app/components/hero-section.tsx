@@ -5,6 +5,7 @@ import figure1 from "../assets/figure1Left.svg";
 import figure2 from "../assets/figure2Left.svg";
 import figure3 from "../assets/figure1Right.svg";
 import figure4 from "../assets/figure2Right.svg";
+import figure5 from "../assets/figureLeft3.svg";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
@@ -36,6 +37,11 @@ const HeroSection = () => {
           src={figure4}
           alt="figure one"
           className="absolute top-38 h-24 right-24"
+        />{" "}
+        <Image
+          src={figure5}
+          alt="figure 4"
+          className="absolute top-[43.7rem] h-24 -left-8"
         />
         <div className=" max-w-[1220px]  h-screen mx-auto">
           <Header />
@@ -77,6 +83,7 @@ const HeroSection = () => {
           src={dashboardIllustratioin}
           alt="dashboard illustration"
           className="absolute z-20"
+          priority
         />
       </div>
     </>
