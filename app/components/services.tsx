@@ -10,7 +10,7 @@ const Services = () => {
   return (
     <>
       {/* Services Section */}
-      <div className="flex justify-between items-center relative mb-9">
+      <div className="flex justify-between items-center relative">
         <Image
           src={dataLine}
           alt="line to incate data"
