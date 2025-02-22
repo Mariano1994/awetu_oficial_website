@@ -6,6 +6,7 @@ import dataAnalysis from "../assets/data-analysis.svg";
 import softwareSolution from "../assets/softwareSolutions.svg";
 import proccessSolution from "../assets/proccess.svg";
 import IASoluction from "../assets/IA.svg";
+import figure from "../assets/figureRight5.svg";
 
 const TimelineSolutions = () => {
   const data = [
@@ -246,6 +247,7 @@ const TimelineSolutions = () => {
   ];
   return (
     <div className="w-full">
+      <Image src={figure} alt="..." className="absolute right-0" />
       <Timeline data={data} />
     </div>
   );
