@@ -1,7 +1,7 @@
+import CallToAction from "./components/call-to-action";
 import HeroSection from "./components/hero-section";
 import PartnerSection from "./components/partner-section";
 import Portifolio from "./components/portifolio";
-import { HeroParallax } from "./components/portifolio-section";
 
 import Solutions from "./components/solutions";
 import StepHeadSection from "./components/step-head-section";
@@ -14,6 +14,7 @@ export default function Home() {
       <StepHeadSection />
       <Solutions />
       <Portifolio />
+      <CallToAction />
     </>
   );
 }
