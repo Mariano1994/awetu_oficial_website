@@ -1,4 +1,5 @@
 import CallToAction from "./components/call-to-action";
+import Footer from "./components/footer";
 import HeroSection from "./components/hero-section";
 import PartnerSection from "./components/partner-section";
 import Portifolio from "./components/portifolio";
@@ -15,6 +16,7 @@ export default function Home() {
       <Solutions />
       <Portifolio />
       <CallToAction />
+      <Footer />
     </>
   );
 }
