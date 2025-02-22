@@ -1,5 +1,6 @@
+import { prisma } from "@/lib/prisma"
 import { NextResponse } from "next/server"
-import prisma from "@/lib/prisma"
+
 
 export async function GET() {
   try {
@@ -10,7 +11,7 @@ export async function GET() {
     })
     return NextResponse.json(services)
   } catch (error) {
-    return NextResponse.json({ error: "Error fetching services" }, { status: 500 })
+    return NextResponse.json({ error: `Error fetching services: ${error}` }, { status: 500 })
   }
 }
 
@@ -27,7 +28,7 @@ export async function POST(request: Request) {
     })
     return NextResponse.json(service)
   } catch (error) {
-    return NextResponse.json({ error: "Error creating service" }, { status: 500 })
+    return NextResponse.json({ error: `Error creating services: ${error}` }, { status: 500 })
   }
 }
 

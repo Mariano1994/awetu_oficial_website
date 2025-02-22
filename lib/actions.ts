@@ -1,6 +1,7 @@
 "use server"
 
-import prisma from "./prisma"
+import { prisma } from "./prisma"
+
 
 // Project actions
 export async function getProjects() {
@@ -11,7 +12,7 @@ export async function getProjects() {
       },
     })
   } catch (error) {
-    throw new Error("Failed to fetch projects")
+    throw new Error(`Failed to fetch projects: ${error}`)
   }
 }
 
@@ -23,7 +24,7 @@ export async function getProject(id: string) {
     if (!project) throw new Error("Project not found")
     return project
   } catch (error) {
-    throw new Error("Failed to fetch project")
+    throw new Error(`Failed to fetch project: ${error}`)
   }
 }
 
@@ -35,7 +36,7 @@ export async function createProject(data: {
   try {
     return await prisma.project.create({ data })
   } catch (error) {
-    throw new Error("Failed to create project")
+    throw new Error(`Failed to create project: ${error}`)
   }
 }
 
@@ -53,7 +54,7 @@ export async function updateProject(
       data,
     })
   } catch (error) {
-    throw new Error("Failed to update project")
+    throw new Error(`Failed to update project: ${error}`)
   }
 }
 
@@ -63,7 +64,7 @@ export async function deleteProject(id: string) {
       where: { id },
     })
   } catch (error) {
-    throw new Error("Failed to delete project")
+    throw new Error(`Failed to delete project: ${error}`)
   }
 }
 
@@ -76,7 +77,7 @@ export async function getServices() {
       },
     })
   } catch (error) {
-    throw new Error("Failed to fetch services")
+    throw new Error(`Failed to fetch services: ${error}`)
   }
 }
 
@@ -88,7 +89,7 @@ export async function getService(id: string) {
     if (!service) throw new Error("Service not found")
     return service
   } catch (error) {
-    throw new Error("Failed to fetch service")
+    throw new Error(`Failed to fetch service: ${error}`)
   }
 }
 
@@ -101,7 +102,7 @@ export async function createService(data: {
   try {
     return await prisma.service.create({ data })
   } catch (error) {
-    throw new Error("Failed to create service")
+    throw new Error(`Failed to create service: ${error}`)
   }
 }
 
@@ -120,7 +121,7 @@ export async function updateService(
       data,
     })
   } catch (error) {
-    throw new Error("Failed to update service")
+    throw new Error(`Failed to update service: ${error}`)
   }
 }
 
@@ -130,7 +131,7 @@ export async function deleteService(id: string) {
       where: { id },
     })
   } catch (error) {
-    throw new Error("Failed to delete service")
+    throw new Error(`Failed to delete service: ${error}`)
   }
 }
 

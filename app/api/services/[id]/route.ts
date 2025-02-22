@@ -1,5 +1,6 @@
+import { prisma } from "@/lib/prisma"
 import { NextResponse } from "next/server"
-import prisma from "@/lib/prisma"
+
 
 export async function GET(request: Request, { params }: { params: { id: string } }) {
   try {
@@ -13,7 +14,7 @@ export async function GET(request: Request, { params }: { params: { id: string }
     }
     return NextResponse.json(service)
   } catch (error) {
-    return NextResponse.json({ error: "Error fetching service" }, { status: 500 })
+    return NextResponse.json({ error: `Error fetching service: ${error}` }, { status: 500 })
   }
 }
 
@@ -28,7 +29,7 @@ export async function PATCH(request: Request, { params }: { params: { id: string
     })
     return NextResponse.json(service)
   } catch (error) {
-    return NextResponse.json({ error: "Error updating service" }, { status: 500 })
+    return NextResponse.json({ error: `Error updating services: ${error}` }, { status: 500 })
   }
 }
 
@@ -41,7 +42,7 @@ export async function DELETE(request: Request, { params }: { params: { id: strin
     })
     return NextResponse.json({ message: "Service deleted" })
   } catch (error) {
-    return NextResponse.json({ error: "Error deleting service" }, { status: 500 })
+    return NextResponse.json({ error: `Error deleting services: ${error}` }, { status: 500 })
   }
 }
 

@@ -1,5 +1,6 @@
+import { prisma } from "@/lib/prisma"
 import { NextResponse } from "next/server"
-import prisma from "@/lib/prisma"
+
 
 export async function GET() {
   try {
@@ -10,7 +11,7 @@ export async function GET() {
     })
     return NextResponse.json(projects)
   } catch (error) {
-    return NextResponse.json({ error: "Error fetching projects" }, { status: 500 })
+    return NextResponse.json({ error: `Error fetching projects: ${error}` }, { status: 500 })
   }
 }
 
@@ -26,7 +27,7 @@ export async function POST(request: Request) {
     })
     return NextResponse.json(project)
   } catch (error) {
-    return NextResponse.json({ error: "Error creating project" }, { status: 500 })
+    return NextResponse.json({ error: `Error creating project: ${error}` }, { status: 500 })
   }
 }
 
