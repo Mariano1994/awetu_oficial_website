@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <PartnerSection />
+      {/* <PartnerSection /> */}
       <StepHeadSection />
       <Solutions />
       <Portifolio />
