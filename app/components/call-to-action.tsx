@@ -6,10 +6,7 @@ import figureLeft5 from "../assets/figureLeft5.svg";
 import Image from "next/image";
 const CallToAction = () => {
   return (
-    <div
-      className="relative w-full h-screen bg-light-blue-200/5 mx-auto flex flex-col pt-28 items-center pb-32"
-      style={{ clipPath: "polygon(0 0, 100% 0%, 100% 71%, 0% 100%)" }}
-    >
+    <div className="relative w-full h-screen bg-light-blue-200/5 mx-auto flex flex-col pt-28 items-center pb-32">
       <Image
         src={figureLeft4}
         alt="figure one"
