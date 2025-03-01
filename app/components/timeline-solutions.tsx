@@ -24,7 +24,7 @@ const TimelineSolutions = () => {
             ajudando a identificar pontos fortes e oportunidades de melhoria no
             seu negócio.
             <div className="flex items-start gap-2">
-              <p>
+              <p className=" hidden md:block">
                 Além disso, nossa tecnologia de inteligência artificial gera
                 perguntas automaticamente, interpreta os dados coletados e
                 fornece recomendações práticas para otimizar a experiência dos
@@ -32,39 +32,14 @@ const TimelineSolutions = () => {
                 em insights reais e leve seu negócio ao próximo nível com dados
                 que fazem a diferença!
               </p>
-              <Image src={dataAnalysis} alt="..." width={350} />
+              <Image
+                src={dataAnalysis}
+                alt="..."
+                width={350}
+                className="hidden md:block"
+              />
             </div>
           </p>
-          {/* <div className="grid grid-cols-2 gap-4">
-            <Image
-              src="https://assets.aceternity.com/templates/startup-1.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="https://assets.aceternity.com/templates/startup-2.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="https://assets.aceternity.com/templates/startup-3.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="https://assets.aceternity.com/templates/startup-4.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-          </div> */}
         </div>
       ),
     },
@@ -82,8 +57,13 @@ const TimelineSolutions = () => {
             ajudando a identificar pontos fortes e oportunidades de melhoria no
             seu negócio.
             <div className="flex items-start gap-2">
-              <Image src={softwareSolution} alt="..." width={350} />
-              <p>
+              <Image
+                src={softwareSolution}
+                alt="..."
+                width={350}
+                className="hidden md:block"
+              />
+              <p className="hidden md:block">
                 Além disso, nossa tecnologia de inteligência artificial gera
                 perguntas automaticamente, interpreta os dados coletados e
                 fornece recomendações práticas para otimizar a experiência dos
@@ -93,36 +73,6 @@ const TimelineSolutions = () => {
               </p>
             </div>
           </p>
-          {/* <div className="grid grid-cols-2 gap-4">
-            <Image
-              src="https://assets.aceternity.com/templates/startup-1.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="https://assets.aceternity.com/templates/startup-2.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="https://assets.aceternity.com/templates/startup-3.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="https://assets.aceternity.com/templates/startup-4.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-          </div> */}
         </div>
       ),
     },
@@ -140,7 +90,7 @@ const TimelineSolutions = () => {
             ajudando a identificar pontos fortes e oportunidades de melhoria no
             seu negócio.
             <div className="flex items-start gap-2">
-              <p>
+              <p className="hidden md:block">
                 Além disso, nossa tecnologia de inteligência artificial gera
                 perguntas automaticamente, interpreta os dados coletados e
                 fornece recomendações práticas para otimizar a experiência dos
@@ -148,39 +98,14 @@ const TimelineSolutions = () => {
                 em insights reais e leve seu negócio ao próximo nível com dados
                 que fazem a diferença!
               </p>
-              <Image src={proccessSolution} alt="..." width={350} />
+              <Image
+                src={proccessSolution}
+                alt="..."
+                width={350}
+                className="hidden md:block"
+              />
             </div>
           </p>
-          {/* <div className="grid grid-cols-2 gap-4">
-            <Image
-              src="https://assets.aceternity.com/templates/startup-1.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="https://assets.aceternity.com/templates/startup-2.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="https://assets.aceternity.com/templates/startup-3.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="https://assets.aceternity.com/templates/startup-4.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-          </div> */}
         </div>
       ),
     },
@@ -193,15 +118,20 @@ const TimelineSolutions = () => {
           <div className="bg-light-green-100 p-4 flex justify-center items-center rounded-lg w-16 h-16 ">
             <TrendingUp className="text-white" size={28} />
           </div>
-          <p className="text-neutral-800 dark:text-neutral-200 font-normal mb-8 leading-7">
+          <p className="text-neutral-800  dark:text-neutral-200 font-normal mb-8 leading-7">
             Descubra o poder da inteligência por trás das opiniões dos seus
             clientes. Nosso serviço permite que você colete feedbacks valiosos
             de seus consumidores, parceiros e colaboradores em tempo real,
             ajudando a identificar pontos fortes e oportunidades de melhoria no
             seu negócio.
             <div className="flex items-start gap-2">
-              <Image src={IASoluction} alt="..." width={350} />
-              <p>
+              <Image
+                src={IASoluction}
+                alt="..."
+                width={350}
+                className="hidden md:block"
+              />
+              <p className="hidden md:block">
                 Além disso, nossa tecnologia de inteligência artificial gera
                 perguntas automaticamente, interpreta os dados coletados e
                 fornece recomendações práticas para otimizar a experiência dos
@@ -211,36 +141,6 @@ const TimelineSolutions = () => {
               </p>
             </div>
           </p>
-          {/* <div className="grid grid-cols-2 gap-4">
-              <Image
-                src="https://assets.aceternity.com/templates/startup-1.webp"
-                alt="startup template"
-                width={500}
-                height={500}
-                className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-              />
-              <Image
-                src="https://assets.aceternity.com/templates/startup-2.webp"
-                alt="startup template"
-                width={500}
-                height={500}
-                className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-              />
-              <Image
-                src="https://assets.aceternity.com/templates/startup-3.webp"
-                alt="startup template"
-                width={500}
-                height={500}
-                className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-              />
-              <Image
-                src="https://assets.aceternity.com/templates/startup-4.webp"
-                alt="startup template"
-                width={500}
-                height={500}
-                className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-              />
-            </div> */}
         </div>
       ),
     },
