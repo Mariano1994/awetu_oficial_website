@@ -19,29 +19,27 @@ const HeroSection = () => {
         <Image
           src={astro}
           alt="..."
-          className="absolute -z-10 left-0 bottom-0 "
-          width={500}
+          className="hidden md:block absolute -z-10 -left-16 -bottom-10 md:w-[500px] w-[250px] "
         />
 
         <Image
           src={astro1}
           alt="..."
-          className="absolute -z-10 right-20 overflow-hidden"
-          width={800}
+          className="absolute -z-10 md:right-24  top-16 md:top-8 md:w-[800px] w-[1000px]"
         />
 
-        <div className=" max-w-[1220px] mx-auto ">
+        <div className=" max-w-[1220px] mx-auto mt-4">
           <Header />
 
-          <div className="flex justify-center items-center mt-16">
+          <div className="flex justify-center items-center mt-16 ">
             <div className="flex flex-col justify-center items-center mt-20 gap-6 ">
               <FlipTitle />
 
-              <span className="text-white ">
+              <span className="text-white text-sm md:text-base ">
                 Com a solução que precisa para assegurar o seu negócio{" "}
               </span>
 
-              <div className="flex items-center gap-3 mt-3">
+              <div className="flex flex-col md:flex-row items-center gap-3 mt-6 md:mt-3">
                 <Button
                   asChild
                   className="rounded-lg text-dark-blue-700 font-medium bg-white border-white border-[0.3px]"
