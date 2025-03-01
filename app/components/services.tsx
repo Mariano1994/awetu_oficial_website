@@ -67,7 +67,7 @@ const Services = () => {
           </div>
         </div>
         <div>
-          <Image src={circle} alt="..." />
+          <Image src={circle} alt="..." width={300} />
         </div>
         <div className="flex flex-col  gap-16 max-w-[300px]">
           {/* Data Analis services */}

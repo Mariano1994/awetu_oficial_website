@@ -2,15 +2,30 @@ import Image from "next/image";
 import footerLogo from "../assets/awetu-logo.svg";
 import Link from "next/link";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
+import astro from "../assets/autronauts/7.svg";
+import astro2 from "../assets/autronauts/10.svg";
+import { StarsBackground } from "@/components/ui/stars-background";
+import { ShootingStars } from "@/components/ui/shooting-stars";
 
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <footer
-      className="w-full bg-dark-blue-700 flex flex-col justify-between items-center mx-auto  md:-mt-56 2xl:-mt-96   h-screen"
-      style={{ clipPath: "polygon(0 23%, 100% 0%, 100% 100%, 0% 100%)" }}
-    >
-      <div className="flex justify-center items-center p-16  md:mt-56 2xl:mt-72">
+    <footer className="relative w-full bg-gradient-to-b from-black/95 to-dark-blue-700/95 flex flex-col justify-between items-center mx-auto  h-[750px] overflow-hidden">
+      <StarsBackground />
+      <ShootingStars />
+      <Image
+        src={astro}
+        alt="..."
+        className="absolute  left-0 -bottom-52 -z-10 "
+        width={600}
+      />
+      <Image
+        src={astro2}
+        alt="..."
+        className="absolute  right-64 bottom-62 -z-10"
+        width={600}
+      />
+      <div className="flex justify-center  py-24  ">
         <div className=" w-[1220px] flex justify-between ">
           <div className="flex flex-col gap-1 max-w-[380px]">
             <Image

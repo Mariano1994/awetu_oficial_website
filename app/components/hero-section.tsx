@@ -33,7 +33,7 @@ const HeroSection = () => {
         <div className=" max-w-[1220px] mx-auto ">
           <Header />
 
-          <div className="flex justify-center items-center mt-8">
+          <div className="flex justify-center items-center mt-16">
             <div className="flex flex-col justify-center items-center mt-20 gap-6 ">
               <FlipTitle />
 
