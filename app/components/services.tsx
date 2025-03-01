@@ -10,26 +10,26 @@ const Services = () => {
   return (
     <>
       {/* Services Section */}
-      <div className="flex justify-between items-center relative">
+      <div className="flex flex-col md:flex-row justify-between items-center relative mt-16 md:mt-24 md:gap-32">
         <Image
           src={dataLine}
           alt="line to incate data"
-          className="absolute top-16 left-72"
+          className="absolute top-16 left-72 hidden md:block"
         />
         <Image
           src={processLine}
           alt="line to incate data"
-          className="absolute top-[430px] left-72"
+          className="absolute top-[430px] left-72 hidden md:block"
         />
         <Image
           src={forwardLine}
           alt="line to incate data"
-          className="absolute top-32 right-80"
+          className="absolute top-32 right-80 hidden md:block"
         />
         <Image
           src={forwardLine}
           alt="line to incate data"
-          className="absolute top-96 right-64"
+          className="absolute top-96 right-64 hidden md:block"
         />
         <div className="flex flex-col gap-16 max-w-[300px]">
           {/* Data Analis services */}
@@ -66,7 +66,7 @@ const Services = () => {
             </p>
           </div>
         </div>
-        <div>
+        <div className="hidden md:block">
           <Image src={circle} alt="..." width={300} />
         </div>
         <div className="flex flex-col  gap-16 max-w-[300px]">
