@@ -9,8 +9,7 @@ export function FlipTitle() {
       className={` text-4xl md:text-7xl font-bold text-white flex flex-col justify-center items-center gap-4 `}
     >
       <span>
-        <span className={`${neopixelFont.className} md:text-7xl`}>Awetu</span>{" "}
-        Techonologies
+        <span>Awetu Technologies</span>
         <br />
       </span>
       <span>
