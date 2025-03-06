@@ -6,6 +6,8 @@ import dataLine from "../assets/dataLine.svg";
 import processLine from "../assets/processLine.svg";
 import forwardLine from "../assets/fowardLine.svg";
 
+import services from "../data/services.json";
+
 const Services = () => {
   return (
     <>
@@ -40,14 +42,11 @@ const Services = () => {
 
             <strong className="text-2xl font-semibold text-dark-blue-700">
               {" "}
-              Análise de <br /> Dados
+              {services[0].service}
             </strong>
 
             <p className="text-base font-light text-dark-blue-700/60">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-              quisquam modi velit quae blanditiis fuga cupiditate, voluptatibus
-              esse, iusto eos odit hic natus distinctio quasi nulla aspernatur,
-              quis sunt tempora?
+              {services[0].description}
             </p>
           </div>
           <div className="flex flex-col gap-4 ">
@@ -57,12 +56,11 @@ const Services = () => {
 
             <strong className="text-2xl font-semibold text-light-yellow-100">
               {" "}
-              Automação de Processos de Negócio
+              {services[2].service}
             </strong>
 
             <p className="text-base font-light text-dark-blue-700/60">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-              quisquam modi velit quae blanditiis fuga
+              {services[2].description}
             </p>
           </div>
         </div>
@@ -78,14 +76,11 @@ const Services = () => {
 
             <strong className="text-2xl font-semibold text-light-blue-200 text-end">
               {" "}
-              Desenvolvimento de Software
+              {services[1].service}
             </strong>
 
             <p className="text-base font-light text-dark-blue-700/60">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-              quisquam modi velit quae blanditiis fuga cupiditate, voluptatibus
-              esse, iusto eos odit hic natus distinctio quasi nulla aspernatur,
-              quis sunt tempora?
+              {services[1].description}
             </p>
           </div>
           <div className="flex flex-col gap-4 items-end ">
@@ -95,12 +90,11 @@ const Services = () => {
 
             <strong className="text-2xl font-semibold text-light-green-100 text-end">
               {" "}
-              Soluções de IA para seu Negócio
+              {services[3].service}
             </strong>
 
             <p className="text-base font-light text-dark-blue-700/60">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-              quisquam modi velit quae blanditiis fuga
+              {services[3].description}
             </p>
           </div>
         </div>

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "service": "Análise de Dados",
+    "description": "Oferecemos soluções avançadas de análise de dados inteligência de negócio, criando relatórios e dashboard personalizados interativos que fornecem insights valiosos que permitem monitorar métricas chaves de desempenho e tomar decisões rápidas e estratégicas baseadas em dados.",
+    "serviceImage": "https://aceternity.com/images/products/thumbnails/new/cremedigital.png"
+  },
+  {
+    "id": "2",
+    "service": "Desenvolvimento de Softwares",
+    "description": "Criamos soluções personalizadas que atendem às demandas específicas dos negócios, com foco em segurança e escalabilidade e experiência do usuário. Utilizamos tecnologias modernas para desenvolver aplicações robustas, intuitivas e acessíveis, que melhoram a eficiência operacional e a interação com os clientes",
+    "serviceImage": "https://aceternity.com/images/products/thumbnails/new/cremedigital.png"
+  },
+  {
+    "id": "3",
+    "service": "Automação de Processos",
+    "description": "   Oferecemos soluções de automação de processos que impulsionam a eficiência e produtividade da sua empresa, reduzindo custos, falhas e tempo em tarefas manuais e repetitivas, permitindo que ganhe foco em tarefas estratégicas que aumentam sua competitividade e inovação.",
+    "serviceImage": "https://aceternity.com/images/products/thumbnails/new/cremedigital.png"
+  },
+  {
+    "id": "4",
+    "service": "Soluções em IA",
+    "description": "Oferecemos soluções de Inteligência Artificial, que lhe permitam prever tendências de mercado, personalizar serviços com precisão e otimizar operações para máxima eficiência",
+    "serviceImage": "https://aceternity.com/images/products/thumbnails/new/cremedigital.png"
+  }
+]
