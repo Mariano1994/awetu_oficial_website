@@ -4,9 +4,13 @@ import { Textarea } from "@/components/ui/textarea";
 import figureLeft4 from "../assets/figureLeft4.svg";
 import figureLeft5 from "../assets/figureLeft5.svg";
 import Image from "next/image";
+
 const CallToAction = () => {
   return (
-    <div className="relative w-full h-screen bg-light-blue-200/5 mx-auto flex flex-col pt-28 items-center pb-32">
+    <div
+      id="contact"
+      className="relative w-full h-screen bg-light-blue-200/5 mx-auto flex flex-col pt-28 items-center pb-32"
+    >
       <Image
         src={figureLeft4}
         alt="figure one"

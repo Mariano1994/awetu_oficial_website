@@ -13,7 +13,7 @@ import { StarsBackground } from "@/components/ui/stars-background";
 const HeroSection = () => {
   return (
     <>
-      <div className="relative h-screen w-full bg-gradient-to-tr from-dark-blue-700/95 to-black/95 overflow-hidden ">
+      <div className=" relative h-screen w-full bg-gradient-to-tr from-dark-blue-700/95 to-black/95 overflow-hidden ">
         <ShootingStars />
         <StarsBackground />
         <Image
@@ -39,10 +39,10 @@ const HeroSection = () => {
                 Com a solução que precisa para assegurar o seu negócio{" "}
               </span>
 
-              <div className="flex flex-col md:flex-row items-center gap-3 mt-6 md:mt-3">
+              <div className="flex flex-col md:flex-row items-center gap-3 mt-6 md:mt-3 z-30">
                 <Button
                   asChild
-                  className="rounded-lg text-dark-blue-700 font-medium bg-white border-white border-[0.3px]"
+                  className="rounded-lg text-dark-blue-700 font-medium bg-white border-white border-[0.3px] "
                 >
                   <Link href="#">Conheça-nos!</Link>
                 </Button>
@@ -51,7 +51,7 @@ const HeroSection = () => {
                   asChild
                   className="rounded-lg bg-transparent font-medium border-white border-[0.3px]"
                 >
-                  <Link href="#">
+                  <Link href="#contact">
                     Contactar
                     <ArrowRight
                       className="text-wihite animate-pulse"

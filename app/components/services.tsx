@@ -7,6 +7,7 @@ import processLine from "../assets/processLine.svg";
 import forwardLine from "../assets/fowardLine.svg";
 
 import services from "../data/services.json";
+import { truncateString } from "../utils/helpersFunctions";
 
 const Services = () => {
   return (
@@ -46,7 +47,7 @@ const Services = () => {
             </strong>
 
             <p className="text-base font-light text-dark-blue-700/60">
-              {services[0].description}
+              {truncateString(services[0].description, 210)}
             </p>
           </div>
           <div className="flex flex-col gap-4 ">
@@ -60,12 +61,12 @@ const Services = () => {
             </strong>
 
             <p className="text-base font-light text-dark-blue-700/60">
-              {services[2].description}
+              {truncateString(services[2].description, 210)}
             </p>
           </div>
         </div>
         <div className="hidden md:block">
-          <Image src={circle} alt="..." width={300} />
+          <Image src={circle} alt="..." width={250} />
         </div>
         <div className="flex flex-col  gap-16 max-w-[300px]">
           {/* Data Analis services */}
@@ -80,7 +81,7 @@ const Services = () => {
             </strong>
 
             <p className="text-base font-light text-dark-blue-700/60">
-              {services[1].description}
+              {truncateString(services[1].description, 210)}
             </p>
           </div>
           <div className="flex flex-col gap-4 items-end ">
@@ -94,7 +95,7 @@ const Services = () => {
             </strong>
 
             <p className="text-base font-light text-dark-blue-700/60">
-              {services[3].description}
+              {truncateString(services[3].description, 200)}
             </p>
           </div>
         </div>

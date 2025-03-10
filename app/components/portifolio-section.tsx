@@ -103,8 +103,11 @@ export const HeroParallax = ({
 
 export const Header = () => {
   return (
-    <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0 flex flex-col items-center z-30">
-      <h1 className="text-2xl md:text-5xl font-bold text-white">Portifolio</h1>
+    <div
+      id="portfolio"
+      className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0 flex flex-col items-center z-30"
+    >
+      <h1 className="text-2xl md:text-5xl font-bold text-white">Portfolio</h1>
       <p className="max-w-2xl text-base md:text-lg mt-8 text-white text-center">
         Na Awetu Technologies, desenvolvemos soluções que impulsionam empresas
         para o futuro. Nosso portfólio de projetos abrange desde aplicações web
