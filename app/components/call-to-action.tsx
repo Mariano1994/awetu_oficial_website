@@ -14,26 +14,26 @@ const CallToAction = () => {
       <Image
         src={figureLeft4}
         alt="figure one"
-        className="absolute top-80 h-36 left-0"
+        className="absolute top-80 h-36 left-0 hidden md:block"
       />
       <Image
         src={figureLeft5}
         alt="figure one"
-        className="absolute top-96 h-24 left-0"
+        className="absolute top-96 h-24 left-0 hidden md:block"
       />
 
       <div className="flex flex-col gap-2 justify-center items-center">
-        <h1 className="text-4xl font-bold text-dark-blue-700">
+        <h1 className="text-3xl md:text-4xl font-bold text-dark-blue-700 text-center">
           {" "}
           Solicite uma viagem ao futuro
         </h1>
 
-        <p className="text-sm text-gray-600 ">
+        <p className="text-sm text-gray-600 text-center px-3  ">
           O seu bilhete para assegurar um lugar no futuro está à um click!
         </p>
       </div>
 
-      <form className=" w-[400px] mt-12 flex flex-col gap-3">
+      <form className=" w-[400px] mt-12 flex flex-col gap-3 px-8 md:px-0">
         <Input placeholder=" Digite seu nome" type="text" />
         <Input placeholder=" E-mail" type="email" />
         <Input placeholder="Seu contacto" type="number" />
