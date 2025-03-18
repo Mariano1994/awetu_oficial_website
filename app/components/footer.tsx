@@ -25,7 +25,7 @@ const Footer = () => {
         className="absolute  right-64 bottom-62 -z-10 hidden md:block"
         width={600}
       />
-      <div className="flex justify-center items-center py-24 md:py-8  ">
+      <div className="z-30 flex justify-center items-center py-24 md:py-8  ">
         <div className=" w-[1220px] flex flex-col justify-start items-center md:flex-row md:justify-between -mt-8 md:mt-16">
           <div className="flex flex-col justify-center items-center md:justify-start md:items-start gap-1 max-w-[380px] px-8 md:px-0">
             <Image
@@ -34,9 +34,9 @@ const Footer = () => {
               className="w-[200px] md:w-[270px]"
             />
             <span className="text-white/80 text-xs md:text-sm font-light ">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex,
-              atque impedit? Asperiores. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Facilis repellendus.
+              Com o propósito claro de desenvolver soluções tecnológicas de alta
+              qualidade, buscamos atender as necessidades atuais e futuras dos
+              nossos clientes.
             </span>
 
             <div className="flex gap-2 mt-4 mb-4 md:mb-0">
@@ -65,21 +65,21 @@ const Footer = () => {
               Acesso rápido
             </span>
             <div className="flex flex-col items-center md:items-start gap-1 mt-4 text-white/80 ">
-              <Link href="#">
+              <Link href="/#home">
                 <span>Inicio</span>
               </Link>
               <Link href="#">
                 <span>Sobre</span>
               </Link>
-              <Link href="#">
+              <Link href="/#portfolio">
                 <span>Portifolio</span>
               </Link>
 
-              <Link href="#">
-                <span>Servico</span>
+              <Link href="/#services">
+                <span>Serviços</span>
               </Link>
-              <Link href="#">
-                <span>Contactat</span>
+              <Link href="/#contact">
+                <span>Contactar</span>
               </Link>
             </div>
           </div>
