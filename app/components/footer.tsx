@@ -10,36 +10,36 @@ import { ShootingStars } from "@/components/ui/shooting-stars";
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <footer className="relative w-full bg-gradient-to-b from-black/95 to-dark-blue-700/95 flex flex-col justify-between items-center mx-auto  h-[750px] overflow-hidden">
+    <footer className="relative w-full bg-gradient-to-b from-black/95 to-dark-blue-700/95 flex flex-col justify-between items-center mx-auto h-[600px]  md:h-[750px] md:overflow-hidden">
       <StarsBackground />
       <ShootingStars />
       <Image
         src={astro}
         alt="..."
-        className="absolute  left-0 -bottom-52 -z-10 "
+        className="absolute  left-0 -bottom-52 -z-10 hidden md:block"
         width={600}
       />
       <Image
         src={astro2}
         alt="..."
-        className="absolute  right-64 bottom-62 -z-10"
+        className="absolute  right-64 bottom-62 -z-10 hidden md:block"
         width={600}
       />
-      <div className="flex justify-center  py-24  ">
-        <div className=" w-[1220px] flex justify-between ">
-          <div className="flex flex-col gap-1 max-w-[380px]">
+      <div className="flex justify-center items-center py-24 md:py-8  ">
+        <div className=" w-[1220px] flex flex-col justify-start items-center md:flex-row md:justify-between -mt-8 md:mt-16">
+          <div className="flex flex-col justify-center items-center md:justify-start md:items-start gap-1 max-w-[380px] px-8 md:px-0">
             <Image
               src={footerLogo}
-              width={270}
-              alt="awetu technologies logo on footer"
+              alt="awetu technologies logo on footer "
+              className="w-[200px] md:w-[270px]"
             />
-            <span className="text-white/80 text-sm font-light ">
+            <span className="text-white/80 text-xs md:text-sm font-light ">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex,
               atque impedit? Asperiores. Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Facilis repellendus.
             </span>
 
-            <div className="flex gap-2 mt-4">
+            <div className="flex gap-2 mt-4 mb-4 md:mb-0">
               <Link href="#" target="_blank">
                 <Instagram
                   size={28}
@@ -60,11 +60,11 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <div>
+          <div className=" flex flex-col justify-center items-center md:items-start mt-5 md:mt-0">
             <span className="text-white text-base font-bold">
               Acesso rápido
             </span>
-            <div className="flex flex-col gap-1 mt-4 text-white/80">
+            <div className="flex flex-col items-center md:items-start gap-1 mt-4 text-white/80 ">
               <Link href="#">
                 <span>Inicio</span>
               </Link>
@@ -86,7 +86,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <span className="text-white pb-6 font-light">
+      <span className="text-white pb-6 font-light text-center">
         Awetu Technologies {year} &copy; Todos os direitos reservados
       </span>
     </footer>
