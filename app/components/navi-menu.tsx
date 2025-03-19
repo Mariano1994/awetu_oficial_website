@@ -43,7 +43,7 @@ function Navigation() {
 
   return (
     <>
-      <NavigationMenu>
+      <NavigationMenu className="relative">
         <div onClick={handleToggleMenu} className=" md:hidden">
           {isOpen ? (
             <X className="h-8 w-8 text-white md:hidden " />
@@ -51,7 +51,7 @@ function Navigation() {
             <Menu className="h-8 w-8 text-white md:hidden " />
           )}
         </div>
-        <NavigationMenuList className="hidden md:flex">
+        <NavigationMenuList className="flex-col md:flex-row bg-red-400 h-[500px] md:h-0">
           <NavigationMenuItem>
             <Link href="#" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
