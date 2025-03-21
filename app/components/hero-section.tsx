@@ -28,7 +28,7 @@ const HeroSection = () => {
           className="absolute -z-10 md:right-24  top-16 md:top-8 md:w-[800px] w-[1000px]"
         />
 
-        <div className="  max-w-[1220px] mx-auto mt-4">
+        <div className="w-full  md:max-w-[1220px] mx-auto mt-4">
           <Header />
 
           <div className="flex justify-center items-center mt-16 ">

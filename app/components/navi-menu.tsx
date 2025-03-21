@@ -32,7 +32,7 @@ const components: { title: string; href: string; description: string }[] = [
   },
   {
     title: "StudySmart",
-    href: "https://www.reactbits.dev/backgrounds/waves",
+    href: "#",
     description:
       "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
   },
@@ -43,15 +43,21 @@ function Navigation() {
 
   return (
     <>
-      <NavigationMenu className="relative">
-        <div onClick={handleToggleMenu} className=" md:hidden">
+      <NavigationMenu className="relatives">
+        <div onClick={handleToggleMenu} className="md:hidden">
           {isOpen ? (
             <X className="h-8 w-8 text-white md:hidden " />
           ) : (
             <Menu className="h-8 w-8 text-white md:hidden " />
           )}
         </div>
-        <NavigationMenuList className="flex-col md:flex-row bg-red-400 h-[500px] md:h-0">
+        <NavigationMenuList
+          className={`absolute md:relative md:top-0 flex-col md:flex-row md:h-0 ${
+            isOpen
+              ? "top-6 bg-dark-blue-700/75 -left-52 min-w-52 rounded-sm"
+              : " -top-64"
+          }`}
+        >
           <NavigationMenuItem>
             <Link href="#" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>

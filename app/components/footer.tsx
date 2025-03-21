@@ -10,7 +10,7 @@ import { ShootingStars } from "@/components/ui/shooting-stars";
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <footer className="relative w-full bg-gradient-to-b from-black/95 to-dark-blue-700/95 flex flex-col justify-between items-center mx-auto h-[600px]  md:h-[750px] md:overflow-hidden">
+    <footer className="relative overflow-hidden w-full bg-gradient-to-b from-black/95 to-dark-blue-700/95 flex flex-col justify-between items-center mx-auto h-[600px]  md:h-[750px] md:overflow-hidden">
       <StarsBackground />
       <ShootingStars />
       <Image

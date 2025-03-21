@@ -11,7 +11,7 @@ import { MenuToggleProvider } from "./contexts/menuToggle";
 
 export default function Home() {
   return (
-    <>
+    <div className="w-full">
       <MenuToggleProvider>
         <HeroSection />
         {/* <PartnerSection /> */}
@@ -21,6 +21,6 @@ export default function Home() {
         <CallToAction />
         <Footer />
       </MenuToggleProvider>
-    </>
+    </div>
   );
 }
