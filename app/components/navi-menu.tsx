@@ -92,7 +92,7 @@ function Navigation() {
                 className={
                   navigationMenuTriggerStyle() +
                   `  ${
-                    isOpen ? " text-black text-md font-semibold" : ""
+                    isOpen ? "text-black text-md font-semibold" : ""
                   } hover:text-light-yellow-100`
                 }
               >

@@ -8,8 +8,14 @@ import forwardLine from "../assets/fowardLine.svg";
 
 import services from "../data/services.json";
 import { truncateString } from "../utils/helpersFunctions";
+import { useState } from "react";
 
 const Services = () => {
+  const [showAllDescriptions, setShowAllDescriptions] = useState(false);
+
+  const toggleShowAllDescriptions = () => {
+    setShowAllDescriptions((show) => !show);
+  };
   return (
     <>
       {/* Services Section */}
@@ -47,7 +53,15 @@ const Services = () => {
             </strong>
 
             <p className="text-base font-light text-dark-blue-700/60">
-              {truncateString(services[0].description, 210)}
+              {showAllDescriptions
+                ? services[0].description
+                : truncateString(services[0].description, 210)}
+              <span
+                onClick={toggleShowAllDescriptions}
+                className="cursor-pointer text-sm text-dark-blue-700/50 font-semibold hover:text-dark-blue-700"
+              >
+                {showAllDescriptions ? " menos" : " ...mais"}
+              </span>
             </p>
           </div>
           <div className="flex flex-col gap-4 ">
@@ -61,7 +75,15 @@ const Services = () => {
             </strong>
 
             <p className="text-base font-light text-dark-blue-700/60">
-              {truncateString(services[2].description, 210)}
+              {showAllDescriptions
+                ? services[0].description
+                : truncateString(services[2].description, 210)}
+              <span
+                onClick={toggleShowAllDescriptions}
+                className="cursor-pointer text-sm text-dark-blue-700/50 font-semibold hover:text-dark-blue-700"
+              >
+                {showAllDescriptions ? " menos" : " ...mais"}
+              </span>
             </p>
           </div>
         </div>
@@ -81,7 +103,15 @@ const Services = () => {
             </strong>
 
             <p className="text-base font-light text-dark-blue-700/60">
-              {truncateString(services[1].description, 210)}
+              {showAllDescriptions
+                ? services[0].description
+                : truncateString(services[1].description, 210)}
+              <span
+                onClick={toggleShowAllDescriptions}
+                className="cursor-pointer text-sm text-dark-blue-700/50 font-semibold hover:text-dark-blue-700"
+              >
+                {showAllDescriptions ? " menos" : " ...mais"}
+              </span>
             </p>
           </div>
           <div className="flex flex-col gap-4 items-end ">
@@ -95,7 +125,15 @@ const Services = () => {
             </strong>
 
             <p className="text-base font-light text-dark-blue-700/60">
-              {truncateString(services[3].description, 200)}
+              {showAllDescriptions
+                ? services[0].description
+                : truncateString(services[3].description, 210)}
+              <span
+                onClick={toggleShowAllDescriptions}
+                className="cursor-pointer text-sm text-dark-blue-700/50 font-semibold hover:text-dark-blue-700"
+              >
+                {showAllDescriptions ? " menos" : " ...mais"}
+              </span>
             </p>
           </div>
         </div>
