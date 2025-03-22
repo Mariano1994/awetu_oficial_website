@@ -20,19 +20,19 @@ import { useMenuToggle } from "../contexts/menuToggle";
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "Awetu Satisfy",
-    href: "#",
+    href: "/awetu_satisfy",
     description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+      "Uma plataforma SaaS de ponta projetada para capacitar empresas de todos os tamanhos a capturar, analisar e agir sobre o feedback do cliente em tempo real. Obtenha insights inestimáveis, impulsione a satisfação do cliente e alimente o crescimento do negócio com nossa solução intuitiva e poderosa.",
   },
   {
     title: "BuyExpress",
-    href: "#",
+    href: "/buy_express",
     description:
       "For sighted users to preview content available behind a link.",
   },
   {
     title: "StudySmart",
-    href: "#",
+    href: "/study_smart",
     description:
       "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
   },
@@ -154,7 +154,6 @@ const ListItem = React.forwardRef<
       <NavigationMenuLink asChild>
         <a
           ref={ref}
-          target="_blank"
           className={cn(
             "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
             className
@@ -162,7 +161,7 @@ const ListItem = React.forwardRef<
           {...props}
         >
           <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+          <p className="line-clamp-2 md:line-clamp-3 text-sm leading-snug text-muted-foreground">
             {children}
           </p>
         </a>
