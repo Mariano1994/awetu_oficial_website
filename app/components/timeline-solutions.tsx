@@ -18,12 +18,13 @@ const TimelineSolutions = () => {
             <Layers className="text-white" size={28} />
           </div>
           <p className="text-neutral-800 dark:text-neutral-200 font-normal mb-8 leading-7">
-            Descubra o poder da inteligência por trás das opiniões dos seus
-            clientes. Nosso serviço permite que você colete feedbacks valiosos
-            de seus consumidores, parceiros e colaboradores em tempo real,
-            ajudando a identificar pontos fortes e oportunidades de melhoria no
-            seu negócio.
-            <div className="flex items-start gap-2">
+            Em um mundo onde a informação é poder, a capacidade de transformar
+            dados brutos em insights acionáveis é o diferencial que impulsiona o
+            sucesso empresarial. Nossa empresa se dedica a auxiliar negócios de
+            todos os portes a desvendar o potencial oculto em seus dados,
+            transformando-os em ferramentas estratégicas para crescimento e
+            inovação.
+            {/* <div className="flex items-start gap-2">
               <p className=" hidden md:block">
                 Além disso, nossa tecnologia de inteligência artificial gera
                 perguntas automaticamente, interpreta os dados coletados e
@@ -38,7 +39,7 @@ const TimelineSolutions = () => {
                 width={350}
                 className="hidden md:block"
               />
-            </div>
+            </div> */}
           </p>
         </div>
       ),
@@ -51,12 +52,12 @@ const TimelineSolutions = () => {
             <Grip className="text-white" size={28} />
           </div>
           <p className="text-neutral-800 dark:text-neutral-200 font-normal mb-8 leading-7">
-            Descubra o poder da inteligência por trás das opiniões dos seus
-            clientes. Nosso serviço permite que você colete feedbacks valiosos
-            de seus consumidores, parceiros e colaboradores em tempo real,
-            ajudando a identificar pontos fortes e oportunidades de melhoria no
-            seu negócio.
-            <div className="flex items-start gap-2">
+            Em um ambiente de negócios em constante evolução, soluções
+            padronizadas muitas vezes não são suficientes para atender às
+            necessidades únicas de cada organização. Nossa empresa se dedica a
+            desenvolver soluções tecnológicas sob medida, que impulsionam o
+            crescimento, a otimização e a inovação para nossos clientes.
+            {/* <div className="flex items-start gap-2">
               <Image
                 src={softwareSolution}
                 alt="..."
@@ -71,7 +72,7 @@ const TimelineSolutions = () => {
                 em insights reais e leve seu negócio ao próximo nível com dados
                 que fazem a diferença!
               </p>
-            </div>
+            </div> */}
           </p>
         </div>
       ),
