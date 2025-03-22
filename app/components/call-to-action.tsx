@@ -9,7 +9,7 @@ const CallToAction = () => {
   return (
     <div
       id="contact"
-      className="relative w-full h-screen bg-light-blue-200/5 mx-auto flex flex-col pt-28 items-center pb-32"
+      className="relative w-full h-screen bg-light-blue-200/5 mx-auto flex flex-col pt-28 items-center pb-32 no-scrollbar"
     >
       <Image
         src={figureLeft4}

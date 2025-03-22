@@ -4,7 +4,7 @@ const StepHeadSection = () => {
   return (
     <div
       id="services"
-      className="w-full mx-auto bg-gradient-to-tr from-gray-100 to-gray-100/5 py-24 "
+      className="w-full mx-auto bg-gradient-to-tr from-gray-100 to-gray-100/5 py-24 no-scrollbar"
     >
       <div className="w-full md:max-w-[1200px] 2xl:max-w-[1080px] mx-auto flex flex-col justify-center items-center ">
         <div className="flex flex-col justify-center items-center gap-6 -mt-4 md:mt-0">

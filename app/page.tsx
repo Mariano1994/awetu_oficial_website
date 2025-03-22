@@ -11,7 +11,7 @@ import { MenuToggleProvider } from "./contexts/menuToggle";
 
 export default function Home() {
   return (
-    <div className="w-full">
+    <div className="w-full no-scrollbar">
       <MenuToggleProvider>
         <HeroSection />
         {/* <PartnerSection /> */}

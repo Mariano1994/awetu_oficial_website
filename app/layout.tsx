@@ -14,7 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${dmSans.variable} antialiased `}>{children}</body>
+      <body className={`${dmSans.variable} antialiased no-scrollbar `}>
+        {children}
+      </body>
     </html>
   );
 }

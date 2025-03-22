@@ -5,8 +5,6 @@ import { ArrowBigLeft } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
-interface Props {}
-
 function Page() {
   return (
     <div className="w-full h-screen flex justify-center items-center bg-gradient-to-tr from-dark-blue-700 to-black">
@@ -14,7 +12,7 @@ function Page() {
       <ShootingStars />
       <div className="z-30 flex flex-col justify-center items-center max-w-[600px] gap-4 px-4 md:px-0 ">
         <h1 className="text-4xl md:text-5xl font-bold text-light-yellow-100">
-          Awetu Satisfy
+          StudySmart
         </h1>
 
         <p className="text-white text-center text-base  md:text-lg font-light leading-8">

@@ -13,7 +13,7 @@ import { StarsBackground } from "@/components/ui/stars-background";
 const HeroSection = () => {
   return (
     <>
-      <div className=" relative h-screen w-full bg-gradient-to-tr from-dark-blue-700/95 to-black/95 overflow-hidden ">
+      <div className=" relative h-screen w-full bg-gradient-to-tr from-dark-blue-700/95 to-black/95 overflow-hidden no-scrollbar ">
         <ShootingStars />
         <StarsBackground />
         <Image
