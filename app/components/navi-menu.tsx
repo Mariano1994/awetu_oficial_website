@@ -63,7 +63,9 @@ function Navigation() {
               <NavigationMenuLink
                 className={
                   navigationMenuTriggerStyle() +
-                  ` ${isOpen ? " text-black text-md font-semibold" : ""}`
+                  ` ${
+                    isOpen ? " text-black text-md font-semibold" : ""
+                  } hover:text-light-yellow-100`
                 }
               >
                 Início
@@ -75,7 +77,9 @@ function Navigation() {
               <NavigationMenuLink
                 className={
                   navigationMenuTriggerStyle() +
-                  ` ${isOpen ? " text-black text-md font-semibold" : ""}`
+                  ` ${
+                    isOpen ? " text-black text-md font-semibold" : ""
+                  } hover:text-light-yellow-100`
                 }
               >
                 Sobre nós
@@ -87,7 +91,9 @@ function Navigation() {
               <NavigationMenuLink
                 className={
                   navigationMenuTriggerStyle() +
-                  ` ${isOpen ? " text-black text-md font-semibold" : ""}`
+                  `  ${
+                    isOpen ? " text-black text-md font-semibold" : ""
+                  } hover:text-light-yellow-100`
                 }
               >
                 Serviços
@@ -99,7 +105,9 @@ function Navigation() {
               <NavigationMenuLink
                 className={
                   navigationMenuTriggerStyle() +
-                  ` ${isOpen ? " text-black text-md font-semibold" : ""}`
+                  ` ${
+                    isOpen ? " text-black text-md font-semibold" : ""
+                  } hover:text-light-yellow-100`
                 }
               >
                 Portfolio
@@ -110,7 +118,9 @@ function Navigation() {
             <NavigationMenuTrigger
               className={
                 navigationMenuTriggerStyle() +
-                ` ${isOpen ? " text-black text-md font-semibold" : ""}`
+                ` ${
+                  isOpen ? " text-black text-md font-semibold" : ""
+                } hover:text-light-yellow-100`
               }
             >
               Produtos
