@@ -25,6 +25,7 @@
     "motion": "^12.4.3",
     "next": "15.1.7",
     "phosphor-react": "^1.4.1",
+    "pnpm": "^10.6.5",
     "prisma": "latest",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
