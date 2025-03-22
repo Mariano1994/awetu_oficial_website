@@ -43,7 +43,7 @@ function Navigation() {
 
   return (
     <>
-      <NavigationMenu className="relatives">
+      <NavigationMenu className="relative">
         <div onClick={handleToggleMenu} className="md:hidden">
           {isOpen ? (
             <X className="h-8 w-8 text-white md:hidden " />
@@ -54,40 +54,67 @@ function Navigation() {
         <NavigationMenuList
           className={`absolute md:relative md:top-0 flex-col md:flex-row md:h-0 ${
             isOpen
-              ? "top-6 bg-dark-blue-700/75 -left-52 min-w-52 rounded-sm"
+              ? "top-6 bg-white/95 -left-[352px] min-w-[373px] justify-start items-start rounded-sm px-3"
               : " -top-64"
           }`}
         >
           <NavigationMenuItem>
             <Link href="#" legacyBehavior passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              <NavigationMenuLink
+                className={
+                  navigationMenuTriggerStyle() +
+                  ` ${isOpen ? " text-black text-md font-semibold" : ""}`
+                }
+              >
                 Início
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
             <Link href="#" legacyBehavior passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              <NavigationMenuLink
+                className={
+                  navigationMenuTriggerStyle() +
+                  ` ${isOpen ? " text-black text-md font-semibold" : ""}`
+                }
+              >
                 Sobre nós
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
             <Link href="#services" legacyBehavior passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              <NavigationMenuLink
+                className={
+                  navigationMenuTriggerStyle() +
+                  ` ${isOpen ? " text-black text-md font-semibold" : ""}`
+                }
+              >
                 Serviços
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
             <Link href="#portfolio" legacyBehavior passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              <NavigationMenuLink
+                className={
+                  navigationMenuTriggerStyle() +
+                  ` ${isOpen ? " text-black text-md font-semibold" : ""}`
+                }
+              >
                 Portfolio
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Produtos</NavigationMenuTrigger>
+            <NavigationMenuTrigger
+              className={
+                navigationMenuTriggerStyle() +
+                ` ${isOpen ? " text-black text-md font-semibold" : ""}`
+              }
+            >
+              Produtos
+            </NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                 {components.map((component) => (

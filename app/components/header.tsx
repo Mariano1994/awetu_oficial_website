@@ -8,7 +8,6 @@ const Header = () => {
   return (
     <header className=" flex justify-between items-center md:px-3 px-8">
       <Image src={logo} alt="logo" className="-ml-5" />
-
       <Navigation />
 
       <Button
