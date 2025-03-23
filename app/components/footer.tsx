@@ -65,20 +65,20 @@ const Footer = () => {
               Acesso rápido
             </span>
             <div className="flex flex-col items-center md:items-start gap-1 mt-4 text-white/80 ">
-              <Link href="/#home">
+              <Link href="/#home" className="hover:text-light-yellow-100">
                 <span>Inicio</span>
               </Link>
-              <Link href="#">
+              <Link href="#" className="hover:text-light-yellow-100">
                 <span>Sobre</span>
               </Link>
-              <Link href="/#portfolio">
+              <Link href="/#portfolio" className="hover:text-light-yellow-100">
                 <span>Portifolio</span>
               </Link>
 
-              <Link href="/#services">
+              <Link href="/#services" className="hover:text-light-yellow-100">
                 <span>Serviços</span>
               </Link>
-              <Link href="/#contact">
+              <Link href="/#contact" className="hover:text-light-yellow-100">
                 <span>Contactar</span>
               </Link>
             </div>
