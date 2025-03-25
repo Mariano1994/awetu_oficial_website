@@ -2,10 +2,6 @@ import Image from "next/image";
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
 import { Grip, Layers, PieChart, TrendingUp } from "lucide-react";
-import dataAnalysis from "../assets/data-analysis.svg";
-import softwareSolution from "../assets/softwareSolutions.svg";
-import proccessSolution from "../assets/proccess.svg";
-import IASoluction from "../assets/IA.svg";
 import figure from "../assets/figureRight5.svg";
 
 const TimelineSolutions = () => {
@@ -18,12 +14,15 @@ const TimelineSolutions = () => {
             <Layers className="text-white" size={28} />
           </div>
           <p className="text-neutral-800 dark:text-neutral-200 font-normal mb-8 leading-7">
-            Em um mundo onde a informação é poder, a capacidade de transformar
-            dados brutos em insights acionáveis é o diferencial que impulsiona o
-            sucesso empresarial. Nossa empresa se dedica a auxiliar negócios de
-            todos os portes a desvendar o potencial oculto em seus dados,
-            transformando-os em ferramentas estratégicas para crescimento e
-            inovação.
+            A informação certa no momento certo pode ser a chave para o sucesso
+            empresarial. Transformar dados brutos em insights acionáveis permite
+            otimizar processos, embasar decisões estratégicas e impulsionar a
+            inovação. <br /> Nossa empresa auxilia negócios de todos os portes a
+            extrair o máximo valor de seus dados, convertendo-os em ferramentas
+            poderosas para crescimento e competitividade. Com soluções
+            inteligentes e personalizadas, ajudamos sua empresa a tomar decisões
+            mais assertivas e a se destacar no mercado. Descubra como a análise
+            de dados pode transformar o seu negócio!
             {/* <div className="flex items-start gap-2">
               <p className=" hidden md:block">
                 Além disso, nossa tecnologia de inteligência artificial gera
@@ -52,27 +51,26 @@ const TimelineSolutions = () => {
             <Grip className="text-white" size={28} />
           </div>
           <p className="text-neutral-800 dark:text-neutral-200 font-normal mb-8 leading-7">
-            Em um ambiente de negócios em constante evolução, soluções
-            padronizadas muitas vezes não são suficientes para atender às
-            necessidades únicas de cada organização. Nossa empresa se dedica a
-            desenvolver soluções tecnológicas sob medida, que impulsionam o
-            crescimento, a otimização e a inovação para nossos clientes.
-            {/* <div className="flex items-start gap-2">
-              <Image
-                src={softwareSolution}
-                alt="..."
-                width={350}
-                className="hidden md:block"
-              />
+            Em um ambiente de negócios em constante evolução, onde a inovação e
+            a competitividade são essenciais, soluções genéricas não bastam. É
+            por isso que desenvolvemos softwares personalizados, projetados para
+            atender às necessidades específicas da sua empresa, aumentando a
+            eficiência operacional e garantindo maior produtividade.
+            <div>
+              <br />
+            </div>
+            <div className="flex items-start gap-2">
               <p className="hidden md:block">
-                Além disso, nossa tecnologia de inteligência artificial gera
-                perguntas automaticamente, interpreta os dados coletados e
-                fornece recomendações práticas para otimizar a experiência dos
-                seus clientes e aumentar seus resultados. Tome decisões baseadas
-                em insights reais e leve seu negócio ao próximo nível com dados
-                que fazem a diferença!
+                Nossas soluções são escaláveis e flexíveis, acompanhando o
+                crescimento do seu negócio e se adaptando às mudanças do
+                mercado. Além disso, oferecemos tecnologias inovadoras que
+                proporcionam uma vantagem competitiva, diferenciando sua empresa
+                com plataformas intuitivas e uma experiência do usuário
+                impecável. Nosso compromisso é transformar tecnologia em um
+                diferencial estratégico, ajudando sua empresa a alcançar novos
+                patamares de sucesso
               </p>
-            </div> */}
+            </div>
           </p>
         </div>
       ),
@@ -85,26 +83,21 @@ const TimelineSolutions = () => {
             <PieChart className="text-white" size={28} />
           </div>
           <p className="text-neutral-800 dark:text-neutral-200 font-normal mb-8 leading-7">
-            Descubra o poder da inteligência por trás das opiniões dos seus
-            clientes. Nosso serviço permite que você colete feedbacks valiosos
-            de seus consumidores, parceiros e colaboradores em tempo real,
-            ajudando a identificar pontos fortes e oportunidades de melhoria no
-            seu negócio.
+            Imagine um futuro onde sua empresa opera com a precisão quase que
+            perfeita, onde a eficiência é a norma e o crescimento é inevitável.
+            Esse futuro não é uma utopia distante, mas uma realidade tangível
+            alcançada através da automação de processos. <br />
+            Ao invés de desperdiçar recursos preciosos em tarefas manuais e
+            repetitivas, invista em um sistema que impulsiona a produtividade,
+            reduz custos e eleva a satisfação dos seus clientes a patamares
+            inéditos.
             <div className="flex items-start gap-2">
               <p className="hidden md:block">
-                Além disso, nossa tecnologia de inteligência artificial gera
-                perguntas automaticamente, interpreta os dados coletados e
-                fornece recomendações práticas para otimizar a experiência dos
-                seus clientes e aumentar seus resultados. Tome decisões baseadas
-                em insights reais e leve seu negócio ao próximo nível com dados
-                que fazem a diferença!
+                A automação de processos transcende a simples substituição de
+                tarefas manuais por sistemas digitais; é uma transformação
+                estratégica que redefine a eficiência e o crescimento do seu
+                negócio.
               </p>
-              <Image
-                src={proccessSolution}
-                alt="..."
-                width={350}
-                className="hidden md:block"
-              />
             </div>
           </p>
         </div>
@@ -120,25 +113,19 @@ const TimelineSolutions = () => {
             <TrendingUp className="text-white" size={28} />
           </div>
           <p className="text-neutral-800  dark:text-neutral-200 font-normal mb-8 leading-7">
-            Descubra o poder da inteligência por trás das opiniões dos seus
-            clientes. Nosso serviço permite que você colete feedbacks valiosos
-            de seus consumidores, parceiros e colaboradores em tempo real,
-            ajudando a identificar pontos fortes e oportunidades de melhoria no
-            seu negócio.
+            Imagine um negócio que não segue tendências — as cria. Um negócio
+            que entende as necessidades de seus clientes antes mesmo que eles
+            expressem, entregando experiências personalizadas como se cada
+            interação fosse feita sob medida. Onde processos fluem sem atrito,
+            as decisões são tomadas com precisão e a inovação pulsa em cada
+            detalhe.
             <div className="flex items-start gap-2">
-              <Image
-                src={IASoluction}
-                alt="..."
-                width={350}
-                className="hidden md:block"
-              />
               <p className="hidden md:block">
-                Além disso, nossa tecnologia de inteligência artificial gera
-                perguntas automaticamente, interpreta os dados coletados e
-                fornece recomendações práticas para otimizar a experiência dos
-                seus clientes e aumentar seus resultados. Tome decisões baseadas
-                em insights reais e leve seu negócio ao próximo nível com dados
-                que fazem a diferença!
+                Pense em chatbots que não apenas respondem, mas se conectam como
+                verdadeiros assistentes pessoais. Sistemas que não só analisam
+                dados, mas antecipam o futuro com a precisão. Ferramentas que
+                liberam sua equipe para o que realmente importa: criatividade,
+                estratégia e crescimento.
               </p>
             </div>
           </p>

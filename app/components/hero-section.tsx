@@ -36,7 +36,8 @@ const HeroSection = () => {
               <FlipTitle />
 
               <span className="text-white text-sm md:text-base ">
-                Com a solução que precisa para assegurar o seu negócio{" "}
+                {/* Com a solução que precisa para assegurar o seu negócio{" "} */}
+                Não criamos apenas soluções. Criamos revoluções.
               </span>
 
               <div className="flex flex-col md:flex-row items-center gap-3 mt-6 md:mt-3 z-30">

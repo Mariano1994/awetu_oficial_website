@@ -33,7 +33,7 @@ const CallToAction = () => {
         </p>
       </div>
 
-      <form className=" w-[400px] mt-12 flex flex-col gap-3 px-8 md:px-0">
+      <form className=" w-[400px] mt-12 flex flex-col gap-3 px-8 md:px-0 max-h-[450px]">
         <Input placeholder=" Digite seu nome" type="text" />
         <Input placeholder=" E-mail" type="email" />
         <Input placeholder="Seu contacto" type="number" />
