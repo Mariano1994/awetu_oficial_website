@@ -16,11 +16,12 @@ function Page() {
         </h1>
 
         <p className="text-white text-center text-base  md:text-lg font-light leading-8">
-          Uma plataforma SaaS de ponta projetada para capacitar empresas de
-          todos os tamanhos a capturar, analisar e agir sobre o feedback do
-          cliente em tempo real. Obtenha insights inestimáveis, impulsione a
-          satisfação de seus cliente e o crescimento do negócio com{" "}
-          <span className="text-light-yellow-100 font-bold">Awetu Satisfy</span>
+          No mundo acelerado de hoje, estudar de forma eficiente vai muito além
+          de apenas tirar boas notas.{" "}
+          <span className="text-light-yellow-100 font-bold">StudySmart</span> é
+          a plataforma definitiva para estudantes que desejam maximizar seu
+          potencial acadêmico, criar hábitos saudáveis e administrar suas
+          finanças com inteligência.{" "}
         </p>
 
         <span className="mt-3 md:mt-0inline-block text-light-yellow-100 text-center text-2xl font-bold bg-black/50 px-4 py-2 rounded-lg animate-pulse">

@@ -24,17 +24,17 @@ const components: { title: string; href: string; description: string }[] = [
     description:
       "Uma plataforma SaaS de ponta projetada para capacitar empresas de todos os tamanhos a capturar, analisar e agir sobre o feedback do cliente em tempo real. Obtenha insights inestimáveis, impulsione a satisfação do cliente e alimente o crescimento do negócio com nossa solução intuitiva e poderosa.",
   },
-  {
-    title: "BuyExpress",
-    href: "/buy_express",
-    description:
-      "For sighted users to preview content available behind a link.",
-  },
+  // {
+  //   title: "BuyExpress",
+  //   href: "/buy_express",
+  //   description:
+  //     "For sighted users to preview content available behind a link.",
+  // },
   {
     title: "StudySmart",
     href: "/study_smart",
     description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+      "A plataforma definitiva para estudantes que desejam maximizar seu potencial acadêmico, criar hábitos saudáveis e administrar suas finanças com inteligência.",
   },
 ];
 
