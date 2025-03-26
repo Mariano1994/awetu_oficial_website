@@ -1,4 +1,5 @@
 "use client";
+import AboutUs from "./components/about-us";
 import CallToAction from "./components/call-to-action";
 import Footer from "./components/footer";
 import HeroSection from "./components/hero-section";
@@ -12,7 +13,7 @@ import { MenuToggleProvider } from "./contexts/menuToggle";
 
 export default function Home() {
   return (
-    <div className="w-full no-scrollbar">
+    <div className=" w-full no-scrollbar">
       <WhatsAppButton phoneNumber="+244945781642" />
       <MenuToggleProvider>
         <HeroSection />
@@ -20,6 +21,7 @@ export default function Home() {
         <StepHeadSection />
         <Solutions />
         <Portifolio />
+        <AboutUs />
         <CallToAction />
         <Footer />
       </MenuToggleProvider>

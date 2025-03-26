@@ -68,7 +68,7 @@ const Footer = () => {
               <Link href="/#home" className="hover:text-light-yellow-100">
                 <span>Inicio</span>
               </Link>
-              <Link href="#" className="hover:text-light-yellow-100">
+              <Link href="#about-us" className="hover:text-light-yellow-100">
                 <span>Sobre</span>
               </Link>
               <Link href="/#portfolio" className="hover:text-light-yellow-100">

@@ -73,7 +73,7 @@ function Navigation() {
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="#" legacyBehavior passHref>
+            <Link href="#about-us" legacyBehavior passHref>
               <NavigationMenuLink
                 className={
                   navigationMenuTriggerStyle() +
