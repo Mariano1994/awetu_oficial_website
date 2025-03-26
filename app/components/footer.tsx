@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import footerLogo from "../assets/awetu-logo.svg";
 import Link from "next/link";

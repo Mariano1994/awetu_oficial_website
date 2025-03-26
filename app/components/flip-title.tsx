@@ -1,6 +1,5 @@
 import React from "react";
 import { FlipWords } from "../../components/ui/flip-words";
-import { neopixelFont } from "../utils/fonts";
 
 const words = ["Construindo", "Arquitetando", "Formando"];
 export function FlipTitle() {

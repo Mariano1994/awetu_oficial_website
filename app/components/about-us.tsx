@@ -4,10 +4,9 @@ import type React from "react";
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { ChevronDown, Target, Heart } from "lucide-react";
+import { Target, Heart } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { CardSpotlight } from "@/components/ui/card-spotlight";
 import Link from "next/link";
 
@@ -181,7 +180,7 @@ export default function AboutUs() {
                     Nosso valores
                   </h3>
                   <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                    {values.map((value, index) => (
+                    {values.map((value) => (
                       <CardSpotlight
                         key={value.title}
                         style={{ background: value.color }}
