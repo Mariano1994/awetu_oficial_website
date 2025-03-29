@@ -34,7 +34,7 @@ const Footer = () => {
               alt="awetu technologies logo on footer "
               className="w-[200px] md:w-[270px]"
             />
-            <span className="text-white/80 text-xs md:text-sm font-light ">
+            <span className="text-white/80 text-xs md:text-sm font-light hidden md:block ">
               Com o propósito claro de desenvolver soluções tecnológicas de alta
               qualidade, buscamos atender as necessidades atuais e futuras dos
               nossos clientes.

@@ -76,11 +76,11 @@ export default function AboutUs() {
       <div className="container px-4 md:px-6 flex flex-col justify-center items-center">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <div
-              className="inline-block rounded-lg px-3 py-1 text-sm text-white"
-              style={{ backgroundColor: colors.darkBlue }}
-            >
-              Quem somos
+            <div className="inline-block rounded-lg px-3 py-1 text-sm text-white">
+              <h1 className="text-3xl md:text-4xl font-bold text-light-blue-200 text-center">
+                {" "}
+                Sobre nós
+              </h1>
             </div>
 
             <p className="max-w-[700px] text-muted-foreground">
