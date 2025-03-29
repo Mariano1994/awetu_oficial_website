@@ -45,7 +45,7 @@ const HeroSection = () => {
                   asChild
                   className="rounded-lg text-dark-blue-700 font-medium bg-white border-white border-[0.3px] "
                 >
-                  <Link href="#">Conheça-nos!</Link>
+                  <Link href="#about-us">Conheça-nos!</Link>
                 </Button>
 
                 <Button
