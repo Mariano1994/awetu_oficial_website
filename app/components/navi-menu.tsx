@@ -64,7 +64,7 @@ function Navigation() {
                 className={
                   navigationMenuTriggerStyle() +
                   ` ${
-                    isOpen ? " text-blue-950 text-md font-semibold" : ""
+                    isOpen ? " text-gray-900 text-md font-semibold" : ""
                   } ml-1 hover:text-light-yellow-100`
                 }
               >
@@ -78,7 +78,7 @@ function Navigation() {
                 className={
                   navigationMenuTriggerStyle() +
                   ` ${
-                    isOpen ? " text-blue-950 text-md font-semibold" : ""
+                    isOpen ? " text-gray-900 text-md font-semibold" : ""
                   } hover:text-light-yellow-100`
                 }
               >
@@ -92,7 +92,7 @@ function Navigation() {
                 className={
                   navigationMenuTriggerStyle() +
                   `  ${
-                    isOpen ? "text-blue-950 text-md font-semibold" : ""
+                    isOpen ? "text-gray-900 text-md font-semibold" : ""
                   } hover:text-light-yellow-100`
                 }
               >
@@ -106,7 +106,7 @@ function Navigation() {
                 className={
                   navigationMenuTriggerStyle() +
                   ` ${
-                    isOpen ? " text-blue-950 text-md font-semibold" : ""
+                    isOpen ? " text-gray-900 text-md font-semibold" : ""
                   } hover:text-light-yellow-100`
                 }
               >
@@ -119,7 +119,7 @@ function Navigation() {
               className={
                 navigationMenuTriggerStyle() +
                 ` ${
-                  isOpen ? " text-blue-950 text-md font-semibold" : ""
+                  isOpen ? " text-gray-900 text-md font-semibold" : ""
                 } hover:text-light-yellow-100`
               }
             >
