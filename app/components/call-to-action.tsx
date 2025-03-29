@@ -9,7 +9,7 @@ const CallToAction = () => {
   return (
     <div
       id="contact"
-      className="relative w-full h-screen bg-light-blue-200/5 mx-auto flex flex-col pt-28 items-center pb-32 no-scrollbar"
+      className="relative w-full md:max-w-[1200px] bg-light-blue-200/5 mx-auto flex flex-col pt-16 pb-28 md:pt-24  items-center md:pb-32 no-scrollbar"
     >
       <Image
         src={figureLeft4}
@@ -33,7 +33,7 @@ const CallToAction = () => {
         </p>
       </div>
 
-      <form className=" w-[400px] mt-12 flex flex-col gap-3 px-8 md:px-0 max-h-[450px]">
+      <form className=" w-[400px] mt-12 flex flex-col gap-3 px-8 md:px-0 md:h-[450px]">
         <Input placeholder=" Digite seu nome" type="text" />
         <Input placeholder=" E-mail" type="email" />
         <Input placeholder="Seu contacto" type="number" />
