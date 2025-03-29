@@ -42,7 +42,7 @@ const Services = () => {
         />
         <div className="flex flex-col gap-16 max-w-[300px]">
           {/* Data Analis services */}
-          <div className="flex flex-col gap-4 ">
+          <div className="flex flex-col items-center md:items-start  gap-4 ">
             <div className="bg-gradient-to-tr from-light-blue-200 to-dark-blue-700 p-4 flex justify-center items-center rounded-lg w-16 h-16 ">
               <Layers className="text-white" size={28} />
             </div>
@@ -64,7 +64,7 @@ const Services = () => {
               </span>
             </p>
           </div>
-          <div className="flex flex-col gap-4 ">
+          <div className="flex flex-col gap-4 items-center md:items-start ">
             <div className="bg-light-yellow-100 p-4 flex justify-center items-center rounded-lg w-16 h-16 ">
               <PieChart className="text-white" size={28} />
             </div>
@@ -92,12 +92,12 @@ const Services = () => {
         </div>
         <div className="flex flex-col  gap-16 max-w-[300px]">
           {/* Data Analis services */}
-          <div className="flex flex-col gap-4 items-end ">
+          <div className="flex flex-col items-center  gap-4 md:items-end ">
             <div className="bg-light-blue-200 p-4 flex justify-center items-center rounded-lg w-16 h-16 ">
               <Grip className="text-white" size={28} />
             </div>
 
-            <strong className="text-2xl font-semibold text-light-blue-200 text-end">
+            <strong className="text-2xl font-semibold text-light-blue-200 md:text-end text-center">
               {" "}
               {services[1].service}
             </strong>
@@ -114,7 +114,7 @@ const Services = () => {
               </span>
             </p>
           </div>
-          <div className="flex flex-col gap-4 items-end ">
+          <div className="flex flex-col items-center gap-4 md:items-end ">
             <div className="bg-light-green-100 p-4 flex justify-center items-center rounded-lg w-16 h-16 ">
               <TrendingUp className="text-white" size={28} />
             </div>
