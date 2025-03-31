@@ -217,7 +217,7 @@ export default function AboutUs() {
               className="text-base font-semibold"
               style={{ color: colors.darkBlue }}
             >
-              Jonta-se a nós nesta jornada
+              Jonte-se a nós nesta jornada
             </h3>
             <p className="max-w-[600px] text-muted-foreground text-sm">
               Juntos, podemos criar mudanças significativas e construir um
