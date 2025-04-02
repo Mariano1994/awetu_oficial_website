@@ -1,9 +1,7 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import figureLeft4 from "../assets/figureLeft4.svg";
 import figureLeft5 from "../assets/figureLeft5.svg";
 import Image from "next/image";
+import ContactForm from "./contact-form";
 
 const CallToAction = () => {
   return (
@@ -33,17 +31,7 @@ const CallToAction = () => {
         </p>
       </div>
 
-      <form className=" w-[400px] mt-12 flex flex-col gap-3 px-8 md:px-0 md:h-[450px]">
-        <Input placeholder=" Digite seu nome" type="text" />
-        <Input placeholder=" E-mail" type="email" />
-        <Input placeholder="Seu contacto" type="number" />
-        <Textarea placeholder="Deixe uma mensagem" />
-
-        <Button className="mt-5 rounded-lg py-6 bg-gradient-to-br from-dark-blue-700 to-light-blue-200 font-medium hover:brightness-90">
-          {" "}
-          Quero garantir o meu lugar!
-        </Button>
-      </form>
+      <ContactForm />
     </div>
   );
 };
