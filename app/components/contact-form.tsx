@@ -2,35 +2,23 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import z from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { ErrorMessage } from "@hookform/error-message";
-
-const contactFormSchema = z.object({
-  name: z
-    .string()
-    .trim()
-    .min(5, { message: "O nome deve ter pelo menos 5 caracteres" }),
-  email: z.string().email({ message: "E-mail inválido" }),
-  contact: z.string(),
-  message: z
-    .string()
-    .min(10, { message: "A mensagem deve ter pelo menos 10 caracteres" }),
-});
-
-type ContactFormSchema = z.infer<typeof contactFormSchema>;
+import { contactFormSchema, ContactFormSchema } from "../utils/shemas";
 
 const ContactForm = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors, isSubmitting },
   } = useForm<ContactFormSchema>({ resolver: zodResolver(contactFormSchema) });
 
   const handleSubmitForm = (data: ContactFormSchema) => {
-    console.log("Subumetido");
+    new Promise((resolve) => setTimeout(resolve, 2000));
     console.log(data);
+    reset();
   };
 
   return (
