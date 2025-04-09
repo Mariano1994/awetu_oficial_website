@@ -158,15 +158,6 @@ export default function AboutUs() {
                         pessoas.
                       </p>
                     </div>
-                    {/* <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                      <Button
-                        className="inline-flex h-10 items-center justify-center text-white"
-                        style={{ backgroundColor: colors.darkBlue }}
-                      >
-                        Ler mais
-                        <ChevronDown className="ml-2 h-4 w-4" />
-                      </Button>
-                    </div> */}
                   </div>
                 </div>
               )}
@@ -226,8 +217,7 @@ export default function AboutUs() {
           </div>
           <Link
             href="#contact"
-            className="rounded-full text-white px-6 py-2 hover:brightness-90"
-            style={{ backgroundColor: colors.brightBlue }}
+            className="rounded-full text-white px-6 py-2 hover:brightness-90 bg-gradient-to-br from-dark-blue-700 to-light-blue-200"
           >
             Contactar
           </Link>

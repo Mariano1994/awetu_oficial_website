@@ -10,6 +10,8 @@ import StepHeadSection from "./components/step-head-section";
 import WhatsAppButton from "./components/whatsapp-button";
 import { MenuToggleProvider } from "./contexts/menuToggle";
 
+import { Toaster } from "sonner";
+
 export default function Home() {
   return (
     <div className=" w-full no-scrollbar">

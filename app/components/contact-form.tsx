@@ -6,6 +6,8 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { ErrorMessage } from "@hookform/error-message";
 import { contactFormSchema, ContactFormSchema } from "../utils/shemas";
+import { receivedEmailFromUser, sendEmail } from "@/lib/actions";
+import { toast } from "sonner";
 
 const ContactForm = () => {
   const {
@@ -15,9 +17,16 @@ const ContactForm = () => {
     formState: { errors, isSubmitting },
   } = useForm<ContactFormSchema>({ resolver: zodResolver(contactFormSchema) });
 
+  const handleSuccessMessage = () => {
+    setTimeout(() => {
+      toast.success("Obrigado por nos contactar");
+    }, 1000);
+  };
+
   const handleSubmitForm = (data: ContactFormSchema) => {
-    new Promise((resolve) => setTimeout(resolve, 2000));
-    console.log(data);
+    handleSuccessMessage();
+    sendEmail(data);
+    receivedEmailFromUser(data);
     reset();
   };
 

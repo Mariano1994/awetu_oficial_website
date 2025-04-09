@@ -54,7 +54,7 @@ function Navigation() {
         <NavigationMenuList
           className={`absolute md:relative md:top-0 flex-col md:flex-row md:h-0 ${
             isOpen
-              ? "top-6 bg-white/95 -left-[352px] min-w-[373px] justify-start items-start rounded-sm px-3"
+              ? "top-8 bg-gradient-to-tr from-black/80 to-dark-blue-700/80 -left-[352px] min-w-[373px] justify-start items-start rounded-sm px-3"
               : " -top-64"
           }`}
         >
@@ -64,7 +64,7 @@ function Navigation() {
                 className={
                   navigationMenuTriggerStyle() +
                   ` ${
-                    isOpen ? " text-gray-900 text-md font-semibold" : ""
+                    isOpen ? "  text-md font-semibold" : ""
                   } ml-1 hover:text-light-yellow-100`
                 }
               >
@@ -78,7 +78,7 @@ function Navigation() {
                 className={
                   navigationMenuTriggerStyle() +
                   ` ${
-                    isOpen ? " text-gray-900 text-md font-semibold" : ""
+                    isOpen ? " text-md font-semibold" : ""
                   } hover:text-light-yellow-100`
                 }
               >
@@ -92,7 +92,7 @@ function Navigation() {
                 className={
                   navigationMenuTriggerStyle() +
                   `  ${
-                    isOpen ? "text-gray-900 text-md font-semibold" : ""
+                    isOpen ? " text-md font-semibold" : ""
                   } hover:text-light-yellow-100`
                 }
               >
@@ -106,7 +106,7 @@ function Navigation() {
                 className={
                   navigationMenuTriggerStyle() +
                   ` ${
-                    isOpen ? " text-gray-900 text-md font-semibold" : ""
+                    isOpen ? "  text-md font-semibold" : "null"
                   } hover:text-light-yellow-100`
                 }
               >
@@ -119,7 +119,7 @@ function Navigation() {
               className={
                 navigationMenuTriggerStyle() +
                 ` ${
-                  isOpen ? " text-gray-900 text-md font-semibold" : ""
+                  isOpen ? " text-md font-semibold" : ""
                 } hover:text-light-yellow-100`
               }
             >

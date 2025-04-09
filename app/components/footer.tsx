@@ -41,19 +41,28 @@ const Footer = () => {
             </span>
 
             <div className="flex gap-2 mt-4 mb-4 md:mb-0">
-              <Link href="#" target="_blank">
+              <Link
+                href="https://www.instagram.com/awetu_tech?igsh=MWRwM2VrY2Nzem45cA%3D%3D&utm_source=qr"
+                target="_blank"
+              >
                 <Instagram
                   size={28}
                   className="text-white/80 hover:text-white hover:scale-105 transition-all "
                 />
               </Link>
-              <Link href="#" target="_blank">
+              <Link
+                href="https://www.linkedin.com/company/awetutechnologies/"
+                target="_blank"
+              >
                 <Linkedin
                   size={28}
                   className="text-white/80 hover:text-white hover:scale-105 transition-all "
                 />
               </Link>
-              <Link href="#" target="_blank">
+              <Link
+                href="https://www.facebook.com/share/15VCyZP6sR/?mibextid=wwXIfr"
+                target="_blank"
+              >
                 <Facebook
                   size={28}
                   className="text-white/80 hover:text-white hover:scale-105 transition-all "
@@ -87,7 +96,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <span className="text-white pb-6 font-light text-center">
+      <span className="text-sm md:text-base text-white pb-6 font-light text-center">
         Awetu Technologies {year} &copy; Todos os direitos reservados
       </span>
     </footer>

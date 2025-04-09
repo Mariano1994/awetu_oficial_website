@@ -90,8 +90,8 @@ const Services = () => {
         <div className="hidden md:block">
           <Image src={circle} alt="..." width={250} />
         </div>
-        <div className="flex flex-col  gap-16 max-w-[300px]">
-          {/* Data Analis services */}
+        <div className="flex flex-col  gap-16 max-w-[300px] mt-16 md:mt-0">
+          {/* Software Development */}
           <div className="flex flex-col items-center  gap-4 md:items-end ">
             <div className="bg-light-blue-200 p-4 flex justify-center items-center rounded-lg w-16 h-16 ">
               <Grip className="text-white" size={28} />
