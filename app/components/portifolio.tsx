@@ -1,17 +1,18 @@
 import { HeroParallax } from "./portifolio-section";
 import realLotusProjectImage from "../assets/portifolio-images/real-lotus.png";
+import nexterProjectImage from "../assets/portifolio-images/nexter.png";
+import ominiFoodProjectImage from "../assets/portifolio-images/omnifood.png";
 
 const projects = [
   {
-    title: "Moonbeam",
-    link: "https://gomoonbeam.com",
-    thumbnail: realLotusProjectImage,
+    title: "Nexter",
+    link: "https://nexter-kappa.vercel.app",
+    thumbnail: nexterProjectImage,
   },
   {
-    title: "Cursor",
-    link: "https://cursor.so",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+    title: "OminiFood",
+    link: "https://omnifood-pied.vercel.app/",
+    thumbnail: ominiFoodProjectImage,
   },
   {
     title: "Real Lotus Imobiliaria",
