@@ -59,8 +59,7 @@ const WelcomeEmail = ({ name }: WelcomeEmailProps) => {
               inovação e evolução tecnológica!
             </Text>
             <Text className="text-black text-[14px] leading-[24px]">
-              <span className="font-bold">{name}</span>, Seja bem-vindo a bordo
-              e prepare-se para a decolagem.🚀✨
+              Prepare-se para a decolagem.🚀✨
             </Text>
 
             <Section className="text-center mt-[32px] mb-[32px]">
