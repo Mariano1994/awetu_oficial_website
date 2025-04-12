@@ -28,13 +28,13 @@ export const receivedEmailFromUser = async (datainfo: ContactFormSchema) => {
   try {
     const { error } = await resend.emails.send({
       from: `${datainfo.name} <${process.env.RESEND_EMAIL_FROM}>`,
-      to: [datainfo.email],
+      to: [process.env.RESEND_EMAIL_FROM as string],
       subject: "New Lead",
       react: NewLeadEmail({
-        name: datainfo.name || "Mariano",
-        contact: datainfo.contact || "45748764",
-        email: datainfo.email || "s2Tb0@example.com",
-        message: datainfo.message || "Mensagem",
+        name: datainfo.name,
+        contact: datainfo.contact,
+        email: datainfo.email,
+        message: datainfo.message,
       }),
     });
 
