@@ -35,7 +35,7 @@ const HeroSection = () => {
             <div className="flex flex-col justify-center items-center mt-20 gap-6 ">
               <FlipTitle />
 
-              <span className="text-white text-sm md:text-base ">
+              <span className="text-white text-sm md:text-base text-center ">
                 {/* Não criamos apenas soluções. Criamos revoluções. */}
                 Transformamos ideias em revoluções, não apenas em soluções
               </span>
