@@ -23,22 +23,6 @@ const TimelineSolutions = () => {
             inteligentes e personalizadas, ajudamos sua empresa a tomar decisões
             mais assertivas e a se destacar no mercado. Descubra como a análise
             de dados pode transformar o seu negócio!
-            {/* <div className="flex items-start gap-2">
-              <p className=" hidden md:block">
-                Além disso, nossa tecnologia de inteligência artificial gera
-                perguntas automaticamente, interpreta os dados coletados e
-                fornece recomendações práticas para otimizar a experiência dos
-                seus clientes e aumentar seus resultados. Tome decisões baseadas
-                em insights reais e leve seu negócio ao próximo nível com dados
-                que fazem a diferença!
-              </p>
-              <Image
-                src={dataAnalysis}
-                alt="..."
-                width={350}
-                className="hidden md:block"
-              />
-            </div> */}
           </p>
         </div>
       ),
@@ -119,15 +103,6 @@ const TimelineSolutions = () => {
             interação fosse feita sob medida. Onde processos fluem sem atrito,
             as decisões são tomadas com precisão e a inovação pulsa em cada
             detalhe.
-            <div className="flex items-start gap-2">
-              <p className="hidden md:block">
-                Pense em chatbots que não apenas respondem, mas se conectam como
-                verdadeiros assistentes pessoais. Sistemas que não só analisam
-                dados, mas antecipam o futuro com a precisão. Ferramentas que
-                liberam sua equipe para o que realmente importa: criatividade,
-                estratégia e crescimento.
-              </p>
-            </div>
           </p>
         </div>
       ),

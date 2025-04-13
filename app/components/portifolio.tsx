@@ -2,6 +2,8 @@ import { HeroParallax } from "./portifolio-section";
 import realLotusProjectImage from "../assets/portifolio-images/real-lotus.png";
 import nexterProjectImage from "../assets/portifolio-images/nexter.png";
 import ominiFoodProjectImage from "../assets/portifolio-images/omnifood.png";
+import eduworldProjectImage from "../assets/portifolio-images/eduworld.png";
+import awetudasboardProjectImage from "../assets/portifolio-images/awetu_dasboard.png";
 
 const projects = [
   {
@@ -21,18 +23,6 @@ const projects = [
   },
 
   {
-    title: "Editorially",
-    link: "https://editorially.org",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editorially.png",
-  },
-  {
-    title: "Editrix AI",
-    link: "https://editrix.ai",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editrix.png",
-  },
-  {
     title: "Pixel Perfect",
     link: "https://app.pixelperfect.quest",
     thumbnail:
@@ -44,6 +34,11 @@ const projects = [
     link: "https://algochurn.com",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
+  },
+  {
+    title: "Awetu Dasboard",
+    link: "https://awetu-dashboard.vercel.app/organization",
+    thumbnail: awetudasboardProjectImage,
   },
   {
     title: "Aceternity UI",
