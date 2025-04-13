@@ -109,7 +109,7 @@ const TimelineSolutions = () => {
     },
   ];
   return (
-    <div className="w-full">
+    <div className="w-full mt-10 md:mt-0">
       <Image src={figure} alt="..." className="absolute right-0" />
       <Timeline data={data} />
     </div>
