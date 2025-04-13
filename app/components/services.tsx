@@ -76,7 +76,7 @@ const Services = () => {
 
             <p className="text-base font-light text-dark-blue-700/60">
               {showAllDescriptions
-                ? services[0].description
+                ? services[2].description
                 : truncateString(services[2].description, 210)}
               <span
                 onClick={toggleShowAllDescriptions}
@@ -104,7 +104,7 @@ const Services = () => {
 
             <p className="text-base font-light text-dark-blue-700/60">
               {showAllDescriptions
-                ? services[0].description
+                ? services[1].description
                 : truncateString(services[1].description, 210)}
               <span
                 onClick={toggleShowAllDescriptions}
@@ -126,7 +126,7 @@ const Services = () => {
 
             <p className="text-base font-light text-dark-blue-700/60">
               {showAllDescriptions
-                ? services[0].description
+                ? services[3].description
                 : truncateString(services[3].description, 210)}
               <span
                 onClick={toggleShowAllDescriptions}

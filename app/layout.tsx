@@ -16,6 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>{/* <meta name="theme-color" content="#0d9488" /> */}</head>
       <body className={`${dmSans.variable} antialiased no-scrollbar `}>
         <Toaster richColors closeButton expand />
         {children}
