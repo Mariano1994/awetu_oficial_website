@@ -28,7 +28,7 @@ export const receivedEmailFromUser = async (datainfo: ContactFormSchema) => {
   try {
     const { error } = await resend.emails.send({
       from: `${datainfo.name} <${process.env.RESEND_EMAIL_FROM}>`,
-      to: [process.env.RESEND_EMAIL_FROM as string],
+      to: ["geral@awetu.tech"],
       subject: "New Lead",
       react: NewLeadEmail({
         name: datainfo.name,

@@ -13,8 +13,12 @@ import { useState } from "react";
 const Services = () => {
   const [showAllDescriptions, setShowAllDescriptions] = useState(false);
 
-  const toggleShowAllDescriptions = () => {
-    setShowAllDescriptions((show) => !show);
+  const toggleShowAllDescriptions = (id: string) => {
+    services.map((service) => {
+      if (service.id === id) {
+        setShowAllDescriptions(!showAllDescriptions);
+      }
+    });
   };
   return (
     <>
@@ -57,7 +61,7 @@ const Services = () => {
                 ? services[0].description
                 : truncateString(services[0].description, 210)}
               <span
-                onClick={toggleShowAllDescriptions}
+                onClick={() => toggleShowAllDescriptions(services[0].id)}
                 className="cursor-pointer text-sm text-dark-blue-700/50 font-semibold hover:text-dark-blue-700"
               >
                 {showAllDescriptions ? " menos" : " ...mais"}
@@ -79,7 +83,7 @@ const Services = () => {
                 ? services[2].description
                 : truncateString(services[2].description, 210)}
               <span
-                onClick={toggleShowAllDescriptions}
+                onClick={() => toggleShowAllDescriptions(services[2].id)}
                 className="cursor-pointer text-sm text-dark-blue-700/50 font-semibold hover:text-dark-blue-700"
               >
                 {showAllDescriptions ? " menos" : " ...mais"}
@@ -107,7 +111,7 @@ const Services = () => {
                 ? services[1].description
                 : truncateString(services[1].description, 210)}
               <span
-                onClick={toggleShowAllDescriptions}
+                onClick={() => toggleShowAllDescriptions(services[1].id)}
                 className="cursor-pointer text-sm text-dark-blue-700/50 font-semibold hover:text-dark-blue-700"
               >
                 {showAllDescriptions ? " menos" : " ...mais"}
@@ -129,7 +133,7 @@ const Services = () => {
                 ? services[3].description
                 : truncateString(services[3].description, 210)}
               <span
-                onClick={toggleShowAllDescriptions}
+                onClick={() => toggleShowAllDescriptions(services[3].id)}
                 className="cursor-pointer text-sm text-dark-blue-700/50 font-semibold hover:text-dark-blue-700"
               >
                 {showAllDescriptions ? " menos" : " ...mais"}
