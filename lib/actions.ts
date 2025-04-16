@@ -16,11 +16,13 @@ export const sendEmail = async (datainfo: ContactFormSchema) => {
       react: WelcomeEmail({ name: datainfo.name }),
     });
 
+    console.log("Resend Sucessful", datainfo);
+
     if (error) {
       throw error;
     }
-  } catch (e) {
-    throw e;
+  } catch (error) {
+    console.error("Error sending email", error);
   }
 };
 
@@ -38,10 +40,12 @@ export const receivedEmailFromUser = async (datainfo: ContactFormSchema) => {
       }),
     });
 
+    console.log("Resend Sucessful", datainfo);
+
     if (error) {
       throw error;
     }
-  } catch (e) {
-    throw e;
+  } catch (error) {
+    console.error("Error sending email", error);
   }
 };
