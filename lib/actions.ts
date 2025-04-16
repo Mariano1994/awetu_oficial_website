@@ -16,8 +16,6 @@ export const sendEmail = async (datainfo: ContactFormSchema) => {
       react: WelcomeEmail({ name: datainfo.name }),
     });
 
-    console.log("Resend Sucessful", datainfo);
-
     if (error) {
       throw error;
     }
@@ -39,8 +37,6 @@ export const receivedEmailFromUser = async (datainfo: ContactFormSchema) => {
         message: datainfo.message,
       }),
     });
-
-    console.log("Resend Sucessful", datainfo);
 
     if (error) {
       throw error;
