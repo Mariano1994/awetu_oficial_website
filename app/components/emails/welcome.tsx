@@ -20,10 +20,6 @@ interface WelcomeEmailProps {
   name: string;
 }
 
-const baseUrl = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
-  : "email/static";
-
 const WelcomeEmail = ({ name }: WelcomeEmailProps) => {
   const year = new Date().getFullYear();
   return (

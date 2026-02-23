@@ -23,10 +23,10 @@ const ContactForm = () => {
     }, 1000);
   };
 
-  const handleSubmitForm = (data: ContactFormSchema) => {
+  const handleSubmitForm = async (data: ContactFormSchema) => {
     handleSuccessMessage();
-    sendEmail(data);
-    receivedEmailFromUser(data);
+    await sendEmail(data);
+    await receivedEmailFromUser(data);
     reset();
   };
 
@@ -61,6 +61,7 @@ const ContactForm = () => {
 
       <Button
         type="submit"
+        disabled={isSubmitting}
         className="mt-5 rounded-lg py-6 bg-gradient-to-br from-dark-blue-700 to-light-blue-200 font-medium hover:brightness-90"
       >
         {" "}
