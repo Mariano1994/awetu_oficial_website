@@ -1,14 +1,9 @@
 "use client";
 import { Grip, Layers, PieChart, TrendingUp, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 import { WhatsappLogo } from "phosphor-react";
 import { Button } from "@/components/ui/button";
-import dataLine from "../assets/dataLine.svg";
-import processLine from "../assets/processLine.svg";
-import forwardLine from "../assets/fowardLine.svg";
-
 import services from "../data/services.json";
 import { truncateString } from "../utils/helpersFunctions";
 import { useState, type MouseEvent } from "react";
@@ -76,28 +71,8 @@ const Services = () => {
   return (
     <>
       {/* Services Section */}
-      <div className="flex flex-col md:flex-row justify-between items-center relative mt-16 md:mt-24 md:gap-32">
-        <Image
-          src={dataLine}
-          alt="line to incate data"
-          className="absolute top-16 left-72 hidden md:block"
-        />
-        <Image
-          src={processLine}
-          alt="line to incate data"
-          className="absolute top-[430px] left-72 hidden md:block"
-        />
-        <Image
-          src={forwardLine}
-          alt="line to incate data"
-          className="absolute top-32 right-80 hidden md:block"
-        />
-        <Image
-          src={forwardLine}
-          alt="line to incate data"
-          className="absolute top-96 right-64 hidden md:block"
-        />
-        <div className="flex flex-col gap-16 max-w-[300px]">
+      <div className="flex flex-col md:flex-row items-center justify-center relative mt-16 md:mt-24 gap-12 md:gap-20 lg:gap-28">
+        <div className="flex flex-col gap-16 max-w-[300px] md:max-w-[320px]">
           {/* Data Analis services */}
           <div className="flex flex-col items-center md:items-start  gap-4 ">
             <div className="bg-gradient-to-tr from-light-blue-200 to-dark-blue-700 p-4 flex justify-center items-center rounded-lg w-16 h-16 ">
@@ -147,7 +122,7 @@ const Services = () => {
           </div>
         </div>
         <AnimatedCircle className="hidden md:flex items-center justify-center" size={250} />
-        <div className="flex flex-col  gap-16 max-w-[300px] mt-16 md:mt-0">
+        <div className="flex flex-col gap-16 max-w-[300px] md:max-w-[320px] mt-16 md:mt-0">
           {/* Software Development */}
           <div className="flex flex-col items-center  gap-4 md:items-end ">
             <div className="bg-light-blue-200 p-4 flex justify-center items-center rounded-lg w-16 h-16 ">
