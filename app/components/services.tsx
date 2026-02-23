@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { WhatsappLogo } from "phosphor-react";
 import { Button } from "@/components/ui/button";
-import circle from "../assets/circle.svg";
 import dataLine from "../assets/dataLine.svg";
 import processLine from "../assets/processLine.svg";
 import forwardLine from "../assets/fowardLine.svg";
@@ -13,6 +12,7 @@ import forwardLine from "../assets/fowardLine.svg";
 import services from "../data/services.json";
 import { truncateString } from "../utils/helpersFunctions";
 import { useState, type MouseEvent } from "react";
+import AnimatedCircle from "./animated-circle";
 
 type Service = (typeof services)[number];
 
@@ -146,9 +146,7 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className="hidden md:block">
-          <Image src={circle} alt="..." width={250} />
-        </div>
+        <AnimatedCircle className="hidden md:flex items-center justify-center" size={250} />
         <div className="flex flex-col  gap-16 max-w-[300px] mt-16 md:mt-0">
           {/* Software Development */}
           <div className="flex flex-col items-center  gap-4 md:items-end ">
