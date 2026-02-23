@@ -72,6 +72,7 @@ const Services = () => {
     <>
       {/* Services Section */}
       <div className="flex flex-col md:flex-row items-center justify-center relative mt-16 md:mt-24 gap-12 md:gap-20 lg:gap-28">
+        <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-grid-subtle" />
         <div className="flex flex-col gap-16 max-w-[300px] md:max-w-[320px]">
           {/* Data Analis services */}
           <div className="flex flex-col items-center md:items-start  gap-4 ">
