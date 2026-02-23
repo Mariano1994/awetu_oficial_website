@@ -7,7 +7,7 @@ import {
   useSpring,
   MotionValue,
 } from "framer-motion";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
 export const HeroParallax = ({
@@ -16,7 +16,7 @@ export const HeroParallax = ({
   products: {
     title: string;
     link: string;
-    thumbnail: any;
+    thumbnail: StaticImageData;
   }[];
 }) => {
   const firstRow = products.slice(0, 5);
@@ -34,6 +34,8 @@ export const HeroParallax = ({
     useTransform(scrollYProgress, [0, 1], [0, 1000]),
     springConfig
   );
+
+ 
   const translateXReverse = useSpring(
     useTransform(scrollYProgress, [0, 1], [0, -1000]),
     springConfig
@@ -57,7 +59,7 @@ export const HeroParallax = ({
   return (
     <div
       ref={ref}
-      className="h-[240vh] 2xl:h-[200vh] overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d] bg-gradient-to-tr from-dark-blue-700 to-light-blue-200"
+      className="min-h-[160vh] sm:min-h-[200vh] lg:min-h-[240vh] 2xl:min-h-[200vh] overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d] bg-gradient-to-tr from-dark-blue-700 to-light-blue-200"
     >
       <Header />
       <motion.div
@@ -69,7 +71,7 @@ export const HeroParallax = ({
         }}
         className=""
       >
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
+        <motion.div className="flex flex-row-reverse space-x-6 sm:space-x-14 lg:space-x-24 mb-10 sm:mb-16 lg:mb-20 px-8">
           {firstRow.map((product) => (
             <ProductCard
               product={product}
@@ -78,7 +80,7 @@ export const HeroParallax = ({
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row  mb-20 space-x-20 ">
+        <motion.div className="flex flex-row mb-10 sm:mb-16 lg:mb-20 space-x-6 sm:space-x-10 lg:space-x-20 px-4">
           {secondRow.map((product) => (
             <ProductCard
               product={product}
@@ -87,7 +89,7 @@ export const HeroParallax = ({
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
+        <motion.div className="flex flex-row-reverse space-x-reverse space-x-6 sm:space-x-10 lg:space-x-20 px-4">
           {thirdRow.map((product) => (
             <ProductCard
               product={product}
@@ -125,7 +127,7 @@ export const ProductCard = ({
   product: {
     title: string;
     link: string;
-    thumbnail: any;
+    thumbnail: StaticImageData;
   };
   translate: MotionValue<number>;
 }) => {
@@ -138,23 +140,25 @@ export const ProductCard = ({
         y: -20,
       }}
       key={product.title}
-      className="group/product h-96 w-[30rem] relative flex-shrink-0"
+      className="group/product h-64 w-64 sm:h-72 sm:w-80 md:h-80 md:w-[22rem] lg:h-96 lg:w-[30rem] relative flex-shrink-0"
     >
       <Link
         href={product.link}
         target="_blank"
         className="block group-hover/product:shadow-2xl "
       >
-        <Image
-          src={product.thumbnail}
-          height="1000"
-          width="1000"
-          className="object-cover object-left-top absolute h-full w-full inset-0"
-          alt={product.title}
-        />
+        <div className="w-[50%]">
+          <Image
+            src={product.thumbnail}
+            height="1000"
+            width="1000"
+            className="object-cover object-left-top absolute h-full w-full inset-0"
+            alt={product.title}
+          />
+        </div>
       </Link>
       <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
-      <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
+      <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white text-sm sm:text-base lg:text-lg">
         {product.title}
       </h2>
     </motion.div>
