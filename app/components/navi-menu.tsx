@@ -20,7 +20,7 @@ import { useMenuToggle } from "../contexts/menuToggle";
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "Awetu Satisfy",
-    href: "/awetu_satisfy",
+    href: "https://awetu-satisfy.vercel.app/",
     description:
       "Uma plataforma SaaS de ponta projetada para capacitar empresas de todos os tamanhos a capturar, analisar e agir sobre o feedback do cliente em tempo real. Obtenha insights inestimáveis, impulsione a satisfação do cliente e alimente o crescimento do negócio com nossa solução intuitiva e poderosa.",
   },

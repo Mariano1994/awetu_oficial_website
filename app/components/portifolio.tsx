@@ -3,6 +3,7 @@ import realLotusProjectImage from "../assets/portifolio-images/real-lotus.png";
 
 import ominiFoodProjectImage from "../assets/portifolio-images/omnifood.png";
 import awetudasboardProjectImage from "../assets/portifolio-images/awetu_dasboard.png";
+import awetuSatisfyProjectImage from "../assets/portifolio-images/awetu-satisfy.png";
 
 const projects = [
   {
@@ -16,9 +17,9 @@ const projects = [
     thumbnail: realLotusProjectImage,
   },
   {
-    title: "Awetu Dasboard",
-    link: "https://awetu-dashboard.vercel.app/organization",
-    thumbnail: awetudasboardProjectImage,
+    title: "Awetu Satisfy",
+    link: "https://awetu-satisfy.vercel.app/",
+    thumbnail: awetuSatisfyProjectImage,
   },
 
   {
