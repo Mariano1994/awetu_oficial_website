@@ -24,9 +24,9 @@ const ContactForm = () => {
   };
 
   const handleSubmitForm = async (data: ContactFormSchema) => {
-    handleSuccessMessage();
     await sendEmail(data);
     await receivedEmailFromUser(data);
+    handleSuccessMessage();
     reset();
   };
 
